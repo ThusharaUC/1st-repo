@@ -1,3 +1,3 @@
-# 1st-repo
+# SidathCon
 
-This is my 1st git repo
+This is construction web-site. develope using PHP. for Sidath Construction.
