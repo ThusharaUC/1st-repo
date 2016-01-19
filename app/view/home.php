@@ -97,21 +97,21 @@
             </ul>
         </div>
         <!-- end social-media -->
-        <small>Copyright © 2015, Constructor | Html Template</small>
+        <small>Copyright © 2016,| Sidath Construction |</small>
     </div>
     <!-- end side-menu -->
-    <div class="search-bar">
+    <!--<div class="search-bar">
         <form>
             <input type="text" placeholder="Type your word" autofocus >
             <button type="submit">SEARCH</button>
         </form>
-        <span class="close-button"><i class="ion-close"></i></span> </div>
+        <span class="close-button"><i class="ion-close"></i></span> </div>-->
     <!-- end search-bar -->
     <div class="top-bar transparent">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-3 hidden-xs">
-                    <h5 class="hidden-sm">CUSTOMER SERVICE : <b>+90 444 7 878 12 TURKEY</b> <b>+55 12 7878 1245 BRAZIL</b></h5>
+                    <h5 class="hidden-sm" style="color: #000">CUSTOMER SERVICE : <b>+94 772 66 80 78 </b></h5>
                     <ul class="social-media">
                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="#"><i class="ion-social-twitter"></i></a></li>
@@ -123,14 +123,14 @@
                     <ul class="shop-menu">
                         <li><a href="#" data-toggle="modal" data-target="#register-box">REGISTER</a></li>
                         <li><a href="#" data-toggle="modal" data-target="#login-box">LOGIN</a></li>
-                        <li><a href="#" class="search-btn">SEARCH</a></li>
+                       <!-- <li><a href="#" class="search-btn">SEARCH</a></li>-->
                     </ul>
-                    <div class="language dropdown hidden-xs"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <img src="../../public/images/en.png" alt="Image"> ENGLISH <i class="ion-arrow-down-b"></i></a>
-                        <ul class="dropdown-menu" role="menu">
+                    <div class="language dropdown hidden-xs"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <img src="../../public/images/en.png" alt="Image"> ENGLISH <!--<i class="ion-arrow-down-b"></i></a>-->
+                        <!--<ul class="dropdown-menu" role="menu">
                             <li><a href="index-slider.html" class="transition"><img src="../../public/images/tr.png" alt="Image"> TURKISH</a></li>
                             <li><a href="index-slider.html" class="transition"><img src="../../public/images/br.png" alt="Image"> PORTUGUES</a></li>
                             <li><a href="index-slider.html" class="transition"><img src="../../public/images/fr.png" alt="Image"> FRENCH</a></li>
-                        </ul>
+                        </ul>-->
                     </div>
                     <!-- end language -->
                     <!--<div class="cart"> <span class="item"><a href="cart.html" class="transition">2 ITEM(S)</a></span> <img src="../../public/images/icon-cart.svg" alt="Image"> <span class="total">$1.289</span> </div>-->
@@ -150,7 +150,7 @@
                 <a class="navbar-brand" href="index.html"><img src="../../public/images/logo.png" alt="Image"></a> </div>
             <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="mobile-menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html" class="transition">HOME</a></li>
+                    <li><a href="home.php" class="transition">HOME</a></li>
                     <li class="dropdown"> <a href="#">PAGES</a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="about-us.html" class="transition">ABOUT US</a></li>
@@ -175,14 +175,14 @@
                             <li><a href="services7.html" class="transition">PARQUET FLOORS</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"> <a href="#">SHOP</a>
+                    <!--<li class="dropdown"> <a href="#">SHOP</a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="item-list.html" class="transition">ITEM LIST</a></li>
                             <li><a href="item-list-sidebar.html" class="transition">ITEM LIST - SIDEBAR</a></li>
                             <li><a href="item-detail.html" class="transition">ITEM DETAIL</a></li>
                             <li><a href="item-detail-sidebar.html" class="transition">ITEM DETAIL - SIDEBAR</a></li>
                         </ul>
-                    </li>
+                    </li>-->
                     <li class="dropdown"> <a href="#">BLOG</a>
                         <ul class="dropdown-menu" role="menu">   <li><a href="blog.html" class="transition">BLOG LIST</a></li>
                             <li><a href="blog-sidebar.html" class="transition">BLOG LIST - SIDEBAR</a></li>
@@ -269,7 +269,7 @@
                              data-endelementdelay="0.1"
                              data-endspeed="500"
                              data-endeasing="Power4.easeIn">
-                            <h2>STRONGEST VEHICLES</h2>
+                            <h2>CREATIVE DESIGNS</h2>
                         </div>
                         <div class="tp-caption lfb ltt tp-resizeme start"
                              data-x="center"
@@ -318,7 +318,7 @@
                              data-endelementdelay="0.1"
                              data-endspeed="500"
                              data-endeasing="Power4.easeIn">
-                            <h2>PRO EQUIPMENTS</h2>
+                            <h2>TEAM WORK</h2>
                         </div>
                         <div class="tp-caption lfb ltt tp-resizeme start"
                              data-x="center"
@@ -521,7 +521,7 @@
             <!-- end col-7 -->
             <div class="col-lg-5 col-md-6 col-sm-12 spacing">
                 <ul>
-                    <li> <i class="ion-ios-home-outline"></i> <span class="counter">52,147</span>
+                    <li> <i class="ion-ios-home-outline"></i> <span class="counter">52,147,976</span>
                         <h4>PROJECTS DONE</h4>
                     </li>
                     <li> <i class="ion-ios-gear-outline"></i> <span class="counter">66,147</span>
@@ -784,27 +784,27 @@
     <!-- end container -->
 </section>
 <!-- end features-news -->
-<section class="logos">
+<!--<section class="logos">
     <div class="container">
-        <div class="row">
-            <h2>LOGOS</h2>
-            <div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo1.png" alt="Image"> </div>
+        <div class="row">-->
+            <!--<h2>LOGOS</h2>-->
+<!--            <div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo1.png" alt="Image"> </div>-->
             <!-- end col-2 -->
-            <div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo2.png" alt="Image"> </div>
+            <!--<div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo2.png" alt="Image"> </div>-->
             <!-- end col-2 -->
-            <div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo3.png" alt="Image"> </div>
+            <!--<div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo3.png" alt="Image"> </div>-->
             <!-- end col-2 -->
-            <div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo4.png" alt="Image"> </div>
+            <!--<div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo4.png" alt="Image"> </div>-->
             <!-- end col-2 -->
-            <div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo5.png" alt="Image"> </div>
+            <!--<div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo5.png" alt="Image"> </div>-->
             <!-- end col-2 -->
-            <div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo6.png" alt="Image"> </div>
+            <!--<div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo6.png" alt="Image"> </div>-->
             <!-- end col-2 -->
-        </div>
+      <!--  </div>-->
         <!-- end row -->
-    </div>
+    <!--</div>-->
     <!-- end container -->
-</section>
+<!--</section>-->
 <!-- end logos -->
 <section class="testimonials">
     <div class="container">
@@ -950,7 +950,7 @@
         <!-- end row -->
         <div class="sub-footer">
             <div class="row">
-                <div class="col-xs-12"> <span class="copyright">Copyright © 2015 , Constructor | Html Template</span> <span class="creation">Created by Themezinho with <i class="ion-heart"></i> in Istanbul</span> </div>
+                <div class="col-xs-12"> <span class="copyright">Copyright © 2016 , | Sidath Construction | </span> <span class="creation">Created by Thushara Dahanayake (B.Sc [UG](Colombo)) <i class="ion-heart"></i> in Sri Lanka</span> </div>
                 <!-- end col-12 -->
             </div>
             <!-- end row -->
