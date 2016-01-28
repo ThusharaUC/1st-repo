@@ -1,5 +1,5 @@
 <?php
-include 'app/view/home.php';
+header('location: app/view/home.php');
 /**
  * Created by PhpStorm.
  * User: Thush

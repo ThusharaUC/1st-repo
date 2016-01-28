@@ -12,7 +12,7 @@ class USER {
             $def_pass= "welcome@123";
             $new_pass = password_hash($def_pass, PASSWORD_DEFAULT);
 
-            $stmtu = $this->db->prepare("INSERT INTO employee(F_Name,L_Name,E_nic,E_email,E_tel,E_jobrole,E_password) VALUES('$fname','$lname','$nic','$email','$mob_no','$title','$new_pass')");
+            $stmtu = $this->db->prepare("INSERT INTO login(u_name,E_password) VALUES('$uname','$new_pass')");
             $stmtu->execute();
             return true;
         }
@@ -24,7 +24,7 @@ class USER {
 
     public function login($uemail,$upass){
         try{
-            $stmt = $this->db->prepare("SELECT * FROM employee WHERE E_email= '$uemail'");
+            $stmt = $this->db->prepare("SELECT * FROM login WHERE u_name= '$uemail'");
             $stmt->execute();
             $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
