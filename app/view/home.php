@@ -1,4 +1,4 @@
-<?php include '../templates/header.php';?>
+<?php include '../templates/header-home.php';?>
 <section class="slider">
     <div class="banner">
         <div class="slider-content">

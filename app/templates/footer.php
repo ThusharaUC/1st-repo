@@ -60,7 +60,7 @@
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <h4 class="title">PROMO VIDEO</h4>
                 <div class="video">
-                    <figure><img src="../../public/images/banner1.jpg" alt="Image">
+                    <figure><img src="../../public/images/banner2.jpg" alt="Image">
                         <div class="table">
                             <div class="inner"> <i class="ion-play"></i>
                                 <h4><a href="http://www.youtube.com/embed/BpPR4Xww?autoplay=1" class="fancybox fancybox.iframe">WATCH VIDEO</a></h4>
@@ -98,14 +98,16 @@
     })(jQuery)
 </script>
 <script src="../../public/js/bootstrap.min.js"></script>
-<script src="../../public/js/bootstrap-slider.js"></script> <script src="../../public/js/jquery.stellar.js"></script>
+<script src="../../public/js/bootstrap-slider.js"></script>
+<script src="../../public/js/jquery.stellar.js"></script>
 <script src="../../public/js/jquery.fancybox.js?v=2.1.5" type="text/javascript" ></script>
 <script src="../../public/js/isotope.min.js"></script>
 <script src="../../public/js/masonry.js"></script>
 <script src="../../public/js/owl.carousel.js"></script>
 <script src="../../public/js/wow.js"></script>
 <script src="../../public/js/counter.js"></script>
-<script src='../../public/js/jquery.themepunch.tools.min.js' type='text/javascript' ></script> <script src='../../public/js/jquery.themepunch.revolution.min.js' type='text/javascript' ></script>
+<script src='../../public/js/jquery.themepunch.tools.min.js' type='text/javascript' ></script>
+<script src='../../public/js/jquery.themepunch.revolution.min.js' type='text/javascript' ></script>
 <script src='../../public/js/jquery.validate.min.js' type='text/javascript' ></script>
 <script src='../../public/js/jquery.form.js' type='text/javascript' ></script>
 <script src='../../public/js/contact-form.js' type='text/javascript' ></script>
@@ -113,3 +115,46 @@
 <script src="../../public/js/waypoints.min.js"></script>
 <script src="../../public/js/jquery.counterup.min.js"></script>
 <script src="../../public/js/scripts.js"></script>
+<script src="../../public/js/jquery.validate.js"></script>
+<script src="../../public/js/google-js.js"></script>
+<script src="../../public/js/google-maps.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function suggest(inputString){
+        if(inputString.length == 0) {
+            $('#search').fadeOut();
+        } else {
+            $('#project').addClass('load');
+            $.post("../controller/search.php", {queryString: ""+inputString+""}, function(data){
+                if(data.length >0) {
+                    $('#search').fadeIn();
+                    $('#searchList').html(data);
+                    $('#project').removeClass('load');
+                }
+            });
+        }
+    }
+
+    function fill(thisValue) {
+        $('#project').val(thisValue);
+        setTimeout("$('#search').fadeOut();", 600);
+    }
+
+</script>
+<script src="../../public/js/jquery.min.js"></script>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width('50%')
+                    .height('50%');
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+
