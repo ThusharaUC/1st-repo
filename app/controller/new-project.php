@@ -4,6 +4,7 @@
  */
 include '../core/init.php';
 include '../models/dbConfig.php';
+include '../templates/head.php';
 $db=DB::getInstance();
 echo $_POST['p-name'];
 if (isset($_POST['p-name'])) {
