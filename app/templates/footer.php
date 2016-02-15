@@ -13,7 +13,7 @@
                 <!-- end col-4 -->
                 <div class="col-md-4 col-sm-6">
                     <div class="box-content"> <i class="ion-navigate"></i>
-                        <h5>HEADQUERTOR</h5>
+                        <h5>HEAD OFFICE</h5>
                         <p> 2234, Habaraththawela,<br>
                             Sewanagala,
                             Sri Lanka</p>
@@ -46,14 +46,11 @@
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <h4 class="title">PHOTO GALLERY</h4>
                 <ul class="gallery-thumbs">
-                    <li><a href="../../public/images/image1.jpg" class="fancybox"><img src="../../public/images/image1.jpg" alt="Image"></a></li>
-                    <li><a href="../../public/images/image2.jpg" class="fancybox"><img src="../../public/images/image2.jpg" alt="Image"></a></li>
-                    <li><a href="../../public/images/image5.jpg" class="fancybox"><img src="../../public/images/image5.jpg" alt="Image"></a></li>
-                    <li><a href="../../public/images/image6.jpg" class="fancybox"><img src="../../public/images/image6.jpg" alt="Image"></a></li>
-                    <li><a href="../../public/images/image5.jpg" class="fancybox"><img src="../../public/images/image5.jpg" alt="Image"></a></li>
-                    <li><a href="../../public/images/image7.jpg" class="fancybox"><img src="../../public/images/image7.jpg" alt="Image"></a></li>
-                    <li><a href="../../public/images/image8.jpg" class="fancybox"><img src="../../public/images/image8.jpg" alt="Image"></a></li>
-                    <li><a href="../../public/images/image9.jpg" class="fancybox"><img src="../../public/images/image9.jpg" alt="Image"></a></li>
+                    <?php
+                    include '../controller/load-db.php';
+                    for ($i=0;$i<$photocnt;$i++){echo "
+                    <li><a href=".SCRIPT_ROOT. $photores[$i]->path." class='fancybox' rel='gallery'><img src=".SCRIPT_ROOT.$photores[$i]->path." alt='Image'></a></li>";}
+                    ?>
                 </ul>
             </div>
             <!-- end col-3 -->

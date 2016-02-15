@@ -7,13 +7,14 @@ include '../models/dbConfig.php';
 $db=DB::getInstance();
 echo $_POST['p-name'];
 if (isset($_POST['p-name'])) {
-    $p_name = $_POST['p-name'];echo $p_name."kk";
+    $p_name = $_POST['p-name'];
     $c_name = $_POST['c-name'];
     $compnay = $_POST['c-company'];
     $value = $_POST['p-value'];
     $type = $_POST['type'];
     $duration = $_POST['p-duration'];
     $progress = $_POST['progress'];
+    $locat = $_POST['p-location'];
     extract($_POST);
     $error=array();
     $extension=array("jpeg","jpg","png","gif","JPEG","JPG","PNG","GIF");
@@ -53,7 +54,18 @@ if (isset($_POST['p-name'])) {
     }
 
 
-    $query = "INSERT IGNORE INTO projects(p_name,p_client,c_company,p_type, p_value,p_period, p_photo, progress) VALUES ('$p_name','$c_name','$compnay','$type','$value','$duration','$path','$progress')";
+    $query = "INSERT IGNORE INTO projects(p_name,p_client,c_company,p_type, p_value,p_period, p_photo, progress) VALUES ('$p_name','$c_name','$compnay','$type','$value','$duration','$path','$progress','$locat')";
     $result=$db->query($query);
-
-}else{echo "ffff";}
+    echo '<body class="col-sm-12" style="background-color:rgba(0,0,0,.4) ">
+<div  class="log"><h3 class="log-text">PROJECT ADDED</h3></div>
+</body>
+';
+    header('Refresh: 2 ; url= '.$_SERVER["HTTP_REFERER"]);
+}
+else{
+    echo '<body class="col-sm-12" style="background-color:rgba(0,0,0,.4) ">
+<div  class="log"><h3 class="log-text">PROJECT NOT ADDED</h3></div>
+</body>
+';
+    header('Refresh: 2 ; url= '.$_SERVER["HTTP_REFERER"]);
+}

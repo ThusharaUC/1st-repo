@@ -39,7 +39,7 @@ if (isset($_GET['p-name'])) {
             <div class="col-sm-12">
                 <div class="col-sm-6">
                    <figure ><img style="width: 100%;height: 50%" src="<?php echo SCRIPT_ROOT; echo $res[0]->p_photo;?>" alt="<?php echo $res[0]->p_name;?>"></figure>
-                    <?php echo SCRIPT_ROOT; echo $res[0]->p_photo[0];?>
+
                 </div>
                 <div class="col-sm-6" style="float: right">
                     <div class="info">

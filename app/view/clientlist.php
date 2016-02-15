@@ -1,5 +1,5 @@
 <?php include'../templates/head.php';
-include '../controller/load-project.php';
+include '../controller/load-db.php';
 ?>
 <nav class="navbar navbar-default " role="navigation" id="nav">
     <div class="container">
@@ -38,6 +38,8 @@ include '../controller/load-project.php';
         </div>
 
         <?php
+        include '../core/init.php';
+        include '../models/dbConfig.php';
         $data=$db->query("SELECT * FROM client");
         $db_result=$data->result();
         $count=$data->count();
@@ -74,7 +76,7 @@ include '../controller/load-project.php';
                             <div class="form-group">
                                 <label for="inputName" class="col-sm-4 control-label">Client Name:</label>
                                 <div class="col-sm-8">
-                                    <input type="name" name="c-name" class="form-control ext_input" id="c-name" align="center"  placeholder="Name">
+                                    <input type="text" name="c-name" class="form-control ext_input" id="c-name" align="center"  placeholder="Name">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -162,82 +164,9 @@ include '../controller/load-project.php';
 
 
 </div>
-<!--<div style="z-index: -1;">
-<?php
-/*echo "<table  class='modal-header table table-striped' style='alignment:center; font-size: small;width: 100%'>
-    <col width='10'>
-    <col width='40'>
-    <col width='220'>
-    <col width='220'>
-    <col width='220'>
-    <col width='220'>
-    <col width='220'>
-    <col width='220'>
-    <thead>
-    <tr>
-        <th></th>
-        <th>#</th>
-        <th>NAME</th>
-        <th>COMPANY</th>
-        <th>EMAIL</th>
-        <th>CONTACT No.</th>
-        <th></th>
-    </tr>
-    </thead>
-    <tbody>";
 
-
-
-
-    for ($i=0;$i<$ccount;$i++) {
-        $j = $i + 1;
-
-
-        echo "
-
-    <tr>
-
-        <td style='height:10px;'></td>
-        <td style='height:10px;'>{$j}</td>
-        <td style='height:10px;'>{$cresult[$i]->c_name}</td>
-        <td style='height:10px;'>{$cresult[$i]->c_company}</td>
-        <td style='height:10px;'>{$cresult[$i]->c_email}</td>
-        <td style='height:10px;'>{$cresult[$i]->c_phone}</td>
-        <td style='height:10px;'><a href='#' id='delete'>Delete</a> </td>
-    </tr>";
-        }
-    echo "</tbody>
-</table>";
- */?>
-    </div>-->
-<!-- end gallery -->
 <br><br><br><br><br>
-<section class="newsletter" >
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-7 col-xs-12">
-                <div class="titles">
-                    <h6>SIGN UP FOR OUR </h6>
-                    <h2>NEWSLETTER</h2>
-                </div>
-                <!-- end title -->
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Your e-mail">
-                        <button type="submit">SUBSCRIBE</button>
-                    </div>
-                    <small>I promise, we won’t spam you!</small>
-                </form>
-            </div>
-            <!-- end col-8 -->
-            <!--<div class="col-md-4 col-sm-5 hidden-xs" > <img src="../../public/images/newsletter-image.png" alt="Image" class="image"> </div>-->
-            <!-- end col-4 -->
-        </div>
-        <!-- end row -->
-    </div>
-    <!-- end container -->
-</section>
-<!-- end newsletter -->
+
 <?php include'../templates/footer.php';?>
 
 <a href="#" class="cd-top"></a>

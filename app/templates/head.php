@@ -1,5 +1,9 @@
 <head>
-<?php define( 'SCRIPT_ROOT', 'http://localhost/SidathCon/public/images' );?>
+<?php define( 'SCRIPT_ROOT', 'http://localhost/SidathCon/public/images' );
+include '../controller/load-db.php';
+error_reporting(0);
+session_start();
+?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +14,7 @@
 
     <!-- SOCIAL MEDIA META -->
     <meta property="og:description" content="Sidath Construction">
-    <meta property="og:image" content="sidathconstruction.esy.es/preview.png">
+    <meta property="og:image" content="sidathconstruction.com/preview.png">
     <meta property="og:site_name" content="Constructor">
     <meta property="og:title" content="Constructor">
     <meta property="og:type" content="website">
@@ -22,13 +26,13 @@
     <meta name="twitter:creator" content="@Constructor">
     <meta name="twitter:title" content="Constructor">
     <meta name="twitter:description" content="Sidath Construction">
-    <meta name="twitter:image" content="sidathconstruction.esy.es/preview.png">
+    <meta name="twitter:image" content="sidathconstruction.com/preview.png">
 
     <!-- FAVICON FILES -->
     <link href="../../public/images/ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
     <link href="../../public/images/ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
     <link href="../../public/images/ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
-    <link href="../../public/images/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="../../public/images/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed" sizes="57x57">
     <link href="../../public/images/ico/logo.ico" rel="shortcut icon" sizes="192x192">
 
     <!-- CSS FILES -->

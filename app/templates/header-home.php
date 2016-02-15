@@ -22,7 +22,10 @@ $db = DB::getInstance();?>
         <div class="widget search">
             <h4>QUICK SEARCH</h4>
             <form action="search-result.php" method="get">
-                <input type="text" name="p-name" placeholder="Search project" autocomplete="off" required>
+                <input type="text" placeholder="Project Name" name="p-name" id="project" autocomplete="off" onkeyup="suggest(this.value);"                                  onblur="fill();" required/>
+                <div class="searchBox display_box" id="search" style="display: none;">
+                    <div class="suggestionList" id="searchList"> &nbsp; <br></div>
+                </div>
                 <button type="submit">GO</button>
             </form>
         </div>
@@ -81,12 +84,27 @@ $db = DB::getInstance();?>
                 <!-- end col-6 -->
                 <div class="col-md-6 col-sm-9 col-xs-12">
                     <ul class="shop-menu">
-                        <li><a href="#" data-toggle="modal" data-target="#register-box">REGISTER</a></li>
+                        <?php if ($_SESSION['new_user']==""){ ?>
+                        <!--<li><a href="#" data-toggle="modal" data-target="#register-box">REGISTER</a></li>-->
                         <li><a href="#" data-toggle="modal" data-target="#login-box">LOGIN</a></li>
-                        <!-- <li><a href="#" class="search-btn">SEARCH</a></li>-->
-                    </ul>
-                    <div class="language dropdown hidden-xs"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <img src="../../public/images/en.png" alt="Image"> ENGLISH <!--<i class="ion-arrow-down-b"></i></a>-->
+                        <?php } ?>
+                        <?php if ($_SESSION['new_user']!=""){ ?>
+                            <!--<div class="language dropdown "> <a href="#" data-toggle="dropdown" class="dropdown-toggle">  <a href="#"><?php /*echo $_SESSION['user_session']*/?> <i class="ion-arrow-down-b"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="../controller/logout.php" class="transition">Logout</a></li>
+                                    </ul>
+                            </div>-->
 
+                        <li style="margin-right: 0px;margin-left: -10px"><a href="../controller/logout.php" class="search-btn"><i class="ion-power"></i> LOGOUT</a></li>
+                        <?php } ?>
+                    </ul>
+
+                    <div class="language dropdown hidden-xs"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <img src="../../public/images/en.png" alt="Image"> ENGLISH <i class="ion-arrow-down-b"></i></a>
+                        <!--<ul class="dropdown-menu" role="menu">
+                            <li><a href="index-slider.html" class="transition"><img src="images/tr.png" alt="Image"> TURKISH</a></li>
+                            <li><a href="index-slider.html" class="transition"><img src="images/br.png" alt="Image"> PORTUGUES</a></li>
+                            <li><a href="index-slider.html" class="transition"><img src="images/fr.png" alt="Image"> FRENCH</a></li>
+                        </ul>-->
                     </div>
                     <!-- end language -->
                 </div>
@@ -138,13 +156,14 @@ $db = DB::getInstance();?>
                             <li><a href="item-detail-sidebar.html" class="transition">ITEM DETAIL - SIDEBAR</a></li>
                         </ul>
                     </li>-->
-
                     <li><a href="contact-us.php" class="transition">CONTAT US</a></li>
+                    <?php if ($_SESSION['new_user']!=""){ ?>
                     <li class="dropdown"> <a href="#">ADMIN</a>
                         <ul class="dropdown-menu" role="menu">   <li><a href="blog.html" class="transition">BLOG LIST</a></li>
                             <li><a href="clientlist.php" class="transition">CLIENT LIST</a></li>
                         </ul>
                     </li>
+                    <?php } ?>
                     <li class="side-menu">SIDE MENU<span></span><span class="spacing"></span><span></span></li>
 
                 </ul>
@@ -230,20 +249,20 @@ $db = DB::getInstance();?>
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Member Login</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times</span></button>
+                <h4 class="modal-title">Login</h4>
             </div>
             <!-- end modal-header -->
             <div class="modal-body">
-                <form>
+                <form action="../controller/login.php" method="post">
                     <div class="form-group">
                         <label>Your e-mail</label>
-                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="E-mail" name="username" >
                     </div>
                     <!-- end form-group -->
                     <div class="form-group">
                         <label>Your password</label>
-                        <input type="password" placeholder="Pasword">
+                        <input type="password" placeholder="password" name="password">
                     </div>
                     <!-- end form-group -->
                     <div class="form-group"> <a href="#">I forget my password</a> </div>

@@ -1,4 +1,7 @@
-<?php include '../templates/header-home.php';?>
+<?php include '../templates/header-home.php';
+
+?>
+
 <section class="slider">
     <div class="banner">
         <div class="slider-content">
@@ -316,17 +319,17 @@
                 </div>
                 <!-- end title -->
                 <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a</p>
-                <a href="#" class="button">READ MORE</a> </div>
+                <a href="projects.php" class="button">READ MORE</a> </div>
             <!-- end col-7 -->
             <div class="col-lg-5 col-md-6 col-sm-12 spacing">
                 <ul>
-                    <li> <i class="ion-ios-home-outline"></i> <span class="counter">52,147,976</span>
+                    <li> <i class="ion-ios-home-outline"></i> <span class="counter"><?php echo $donepro;?></span>
                         <h4>PROJECTS DONE</h4>
                     </li>
-                    <li> <i class="ion-ios-gear-outline"></i> <span class="counter">66,147</span>
+                    <li> <i class="ion-ios-gear-outline"></i> <span class="counter"><?php echo $npcount;?></span>
                         <h4>UPCOMING PROJECTS</h4>
                     </li>
-                    <li> <i class="ion-ios-flag-outline"></i> <span class="counter">23,147</span>
+                    <li> <i class="ion-ios-flag-outline"></i> <span class="counter"><?php echo $newpro;?></span>
                         <h4>NEW PROJECTS</h4>
                     </li>
                 </ul>
@@ -352,140 +355,30 @@
         </div>
         <!-- end row -->
         <ul class="projects">
-            <li class="1">
-                <figure> <img src="../../public/images/image5.jpg" alt="Image">
-                    <figcaption>
-                        <div class="table">
-                            <div class="inner">SKYDREW HOUSE</div>
+            <?php $g=0;
+            for($i=0;$i<$npcount;$i++) {
+                if ($i%3==0){
+                    $g += 1;}
+                ?>
+                    <li class="<?php echo $g; ?>">
+                        <figure><img src="<?php echo SCRIPT_ROOT; echo $npresult[$i]->p_photo ?>" alt="Image">
+                            <figcaption>
+                                <div class="table">
+                                    <div style="color: white" class="inner"><?php echo $npresult[$i]->p_name ?></div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="progress">
+                            <div class="progress-bar wow " data-wow-delay="0.1s" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $npresult[$i]->progress ?>%"> <?php echo $npresult[$i]->progress ?>%
+                            </div>
+                            <!-- end progress-bar -->
                         </div>
-                    </figcaption>
-                </figure>
-                <div class="progress">
-                    <div class="progress-bar wow first-progress" data-wow-delay="0.1s" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 7%"> 87% </div>
-                    <!-- end progress-bar -->
-                </div>
-                <!-- end progress -->
-            </li>
-            <!-- end project -->
-            <li class="1">
-                <figure> <img src="../../public/images/image6.jpg" alt="Image">
-                    <figcaption>
-                        <div class="table">
-                            <div class="inner">FERILOFT </div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <div class="progress">
-                    <div class="progress-bar wow fourth-progress" role="progressbar" data-wow-delay="0.3s" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"> 90% </div>
-                    <!-- end progress-bar -->
-                </div>
-                <!-- end progress -->
-            </li>
-            <!-- end project -->
-            <li class="1">
-                <figure> <img src="../../public/images/image7.jpg" alt="Image">
-                    <figcaption>
-                        <div class="table">
-                            <div class="inner">ANTHILL</div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <div class="progress">
-                    <div class="progress-bar wow third-progress" role="progressbar" data-wow-delay="0.5s" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"> 29% </div>
-                    <!-- end progress-bar -->
-                </div>
-                <!-- end progress -->
-            </li>
-            <!-- end project -->
-            <li class="2">
-                <figure> <img src="../../public/images/image7.jpg" alt="Image">
-                    <figcaption>
-                        <div class="table">
-                            <div class="inner">SWISSA</div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <div class="progress">
-                    <div class="progress-bar wow second-progress" role="progressbar" data-wow-delay="0.1s" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"> 84% </div>
-                    <!-- end progress-bar -->
-                </div>
-                <!-- end progress -->
-            </li>
-            <!-- end project -->
-            <li class="2">
-                <figure> <img src="../../public/images/image8.jpg" alt="Image">
-                    <figcaption>
-                        <div class="table">
-                            <div class="inner">TURKBUKU</div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <div class="progress">
-                    <div class="progress-bar wow third-progress" role="progressbar" data-wow-delay="0.3s" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"> 29% </div>
-                    <!-- end progress-bar -->
-                </div>
-                <!-- end progress -->
-            </li>
-            <!-- end project -->
-            <li class="2">
-                <figure> <img src="../../public/images/image9.jpg" alt="Image">
-                    <figcaption>
-                        <div class="table">
-                            <div class="inner">BALMUMCU</div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <div class="progress">
-                    <div class="progress-bar wow first-progress" data-wow-delay="0.5s" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100"> 47% </div>
-                    <!-- end progress-bar -->
-                </div>
-                <!-- end progress -->
-            </li>
-            <!-- end project -->
-            <li class="3">
-                <figure> <img src="../../public/images/image5.jpg" alt="Image">
-                    <figcaption>
-                        <div class="table">
-                            <div class="inner">BESIKTAS</div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <div class="progress">
-                    <div class="progress-bar wow first-progress" data-wow-delay="0.1s" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100"> 47% </div>
-                    <!-- end progress-bar -->
-                </div>
-                <!-- end progress -->
-            </li>
-            <!-- end project -->
-            <li class="3">
-                <figure> <img src="../../public/images/image9.jpg" alt="Image">
-                    <figcaption>
-                        <div class="table">
-                            <div class="inner">ORTAKOY</div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <div class="progress">
-                    <div class="progress-bar wow second-progress" role="progressbar" data-wow-delay="0.3s" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"> 84% </div>
-                    <!-- end progress-bar -->
-                </div>
-                <!-- end progress -->
-            </li>
-            <!-- end project -->
-            <li class="3">
-                <figure> <img src="../../public/images/image7.jpg" alt="Image">
-                    <figcaption>
-                        <div class="table">
-                            <div class="inner">GALATA</div>
-                        </div>
-                    </figcaption>
-                </figure>
-                <div class="progress">
-                    <div class="progress-bar wow first-progress" data-wow-delay="0.5s" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100"> 47% </div>
-                    <!-- end progress-bar -->
-                </div>
-                <!-- end progress -->
-            </li>
+                        <!-- end progress -->
+                    </li>
+                <?php
+
+            }
+                 ?>
             <!-- end project -->
         </ul>
         <!-- end projects -->

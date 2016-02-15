@@ -4,7 +4,7 @@ include '../core/init.php';
 include '../models/dbConfig.php';
 $db=DB::getInstance();
 
-if ((isset($_POST['email']))&& ($_POST['email']!="")){
+if ((isset($_POST['email'])) && ($_POST['email']!="")){
     $id = $_POST['client_ID'];
     $u_email=$_POST['email'];
     $pwd=$_POST['password'];

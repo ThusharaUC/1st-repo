@@ -44,40 +44,11 @@
                         </div>
                     </div>
 
-
-                    <!-- end form-group -->
-<!--                    <div class="form-group">
-                        <label>Client Name</label>
-                        <input type="text" placeholder="Client Name" name="c-name">
-                    </div>
-                    <div class="form-group">
-                        <label>Client Company</label>
-                        <input type="text" placeholder="Client Company" name="c-company">
-                    </div>
-                    <div class="form-group">
-                        <label>Project Value</label>
-                        <input type="number" placeholder="Project Value" name="p-value">
-                    </div>
-                    <div class="form-group">
-                        <label>Project Duration</label>
-                        <input type="text" placeholder="Duration (By Month)" name="p-duration">
-                    </div>-->
                     <div class="form-group">
                         <label>Progress</label>
                         <input type="number" placeholder="Progress" name="progress">
                     </div>
                 </div>
-                <!--<div class="col-lg-6 col-md-6">
-                    <div class="form-group">
-                        <label>Project Type</label>
-                        <select class='type' name="type"  required>
-                            <option value="">[-Select type-]</option>
-                            <option value="Road">Road</option>
-                            <option value="Building">Building</option>
-                            <option value="Renovation">Renovation</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>-->
                 <div class="col-lg-6 col-md-6">
                     <div class="form-group">
                         <label>Select image to upload:(one or more)</label>
@@ -96,12 +67,8 @@
             <!-- end form-group -->
         </form>
     </div>
-    <!-- end modal-body ->
-</div>
-<!-- end modal-content ->
-</div>
-<!-- end modal-dialog ->
-</div>-->
+    <!-- end modal-body -->
+
     <script>
         function readURL(input) {
             if (input.files && input.files[0]) {

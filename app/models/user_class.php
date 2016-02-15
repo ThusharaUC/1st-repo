@@ -29,8 +29,8 @@ class USER {
             $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
             if($stmt->rowCount() > 0){
-                if(password_verify($upass,$userRow['E_password'])){
-                    $_SESSION['user_session'] = $userRow['E_nic'];
+                if(password_verify($upass,$userRow['password'])){
+                    $_SESSION['user_session'] = $userRow['u_name'];
                     return true;
                 }
             }
@@ -55,7 +55,7 @@ class USER {
 
     public function logout(){
         unset($_SESSION['user_session']);
-        $_SESSION['user_Session'] = false;
+        $_SESSION['user_session'] = false;
         session_destroy();
         return true;
     }

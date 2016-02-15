@@ -299,7 +299,7 @@ header .top-bar ul.social-media{ float:right; margin-right:10%; margin-top:12px;
 header .top-bar ul.social-media li{ float:left; margin:0 3px;}
 header .top-bar ul.social-media li a{ width:22px; height:22px; line-height:22px; float:left; border-radius:22px; background:#fff; color:#29282e; font-size:13px; text-align:center;}
 header .top-bar ul.social-media li a:hover{ background:#f3c217;}
-header .top-bar .language{ float:right; line-height:46px; margin-left:30px;}
+header .top-bar .language{ float:right; line-height:46px; margin-left:0px;}
 header .top-bar .language .dropdown-toggle{ color: #fff; font-size:12px;}
 header .top-bar .language .dropdown-toggle:hover{ text-decoration:none;}
 header .top-bar .language .dropdown-toggle i{ height:16px; line-height:16px; margin-top:15px; float:right; border-left:1px solid #000; padding-left:5px; margin-left:5px;}
@@ -308,7 +308,7 @@ header .top-bar .language .dropdown-menu li{ width:100%; line-height:20px;}
 header .top-bar .language .dropdown-menu li a{ width:100%; float:left; padding:2px 6px; color:#000; font-size:11px;}
 header .top-bar .language .dropdown-menu li a:hover{ background:none; color:#f3c217;}
 
-header .top-bar ul.shop-menu{ float:left; margin-left:10%;}
+header .top-bar ul.shop-menu{ float:left; margin-left:70%;}
 header .top-bar ul.shop-menu li{ float:left; margin:0 10px;}
 header .top-bar ul.shop-menu li a{ float:left; color: #fff; line-height:46px; font-size:12px;}
 header .top-bar ul.shop-menu li a:hover{text-decoration:none; color:#f3c217;}
@@ -674,9 +674,9 @@ ul.filter li .current{ background:#f3c217;}
 .all-projects ul li figure figcaption{ width:100%; height:100%; text-align:center; color:#000; background:rgba(0,0,0,0.8); position:absolute; left:0; top:0; opacity:0;}
 .all-projects ul li figure:hover figcaption{ opacity:1;}
 .all-projects ul li .info{ width:100%; float:left; margin-bottom:20px;}
-.all-projects ul li .info h5{ color:#f3c217; font-size:19px;}
-.all-projects ul li .info span{ width:100%; float:left; font-size:12px;}
-.all-projects ul li .info .type{ font-family:'Merriweather', serif; margin-bottom:12px; font-size:16px;}
+.all-projects ul li .info h5{ color:#f3c217; font-size:22px;}
+.all-projects ul li .info span{ width:100%; float:left; font-size:15px;}
+.all-projects ul li .info .type{ font-family:'Merriweather', serif; margin-bottom:12px; font-size:20px;}
 .all-projects ul li .info a{ float:left; margin-top:10px; border:2px solid #f3c217; padding:3px 12px; color:#f3c217;}
 .all-projects ul li .info a:hover{ color:#000; background:#f3c217; text-decoration:none;}
 
@@ -905,7 +905,7 @@ footer .sub-footer .creation i{ color:#f3c217;}
 @media only screen and (max-width: 1190px), only screen and (max-device-width: 1190px) {
 
     header .top-bar ul.shop-menu{ margin-left:0;}
-    header .top-bar .language{ margin-left:10px;}
+    header .top-bar .language{ margin-left:0px;}
     .about-us .services-box figure img{ width:100%;}
     ul.projects li{ padding:0 20px;}
     .features-news .home-news figure:before{ width:160px;}
@@ -918,8 +918,8 @@ footer .sub-footer .creation i{ color:#f3c217;}
 
     .navbar-brand{ padding:20px 15px;}
     .navbar-brand img{ height:36px;}
-    header .top-bar ul.social-media{ float:left;}
-    header .top-bar .language{ margin-left:40px;}
+    header .top-bar ul.social-media{ float:right;}
+    header .top-bar .language{ margin-left:0px;}
     .fixed-nav .navbar-brand{ padding:15px;}
     .slider{ height:570px;}
     .slider .banner{ height:auto;}
@@ -1010,4 +1010,21 @@ footer .sub-footer .creation i{ color:#f3c217;}
 	border-top: solid 1px #dedede;
 	border-bottom: solid 1px #dedede;
 	overflow: hidden;
+}
+
+/* login logout */
+.log{
+	height: 180px;
+	width: 400px;
+	background: rgba(243,184,23,1);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -200px;
+	box-shadow: 10px 10px 5px rgba(0,0,0,.6)
+}
+.log-text{
+	text-align: center;
+	margin: 20%;
 }

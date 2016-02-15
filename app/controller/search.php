@@ -29,7 +29,6 @@
                 // do nothing
             }
             $query = $db->query("SELECT * FROM projects WHERE p_name='%$queryString%' LIMIT 10");
-            var_dump($query);
         } else {
             echo 'There should be no direct access to this script!';
         }

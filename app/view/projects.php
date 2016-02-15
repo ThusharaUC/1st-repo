@@ -1,5 +1,4 @@
 <?php include'../templates/header.php';
-
 ?>
 <section class="internal-header overlay-dark" data-stellar-background-ratio="0.5">
     <div class="container">
@@ -18,11 +17,14 @@
     </div>
     <!-- end container -->
 </section>
+<?php if ($_SESSION['new_user']!=""){ ?>
 <div  style="float:right;margin-bottom: 10px;margin-top: 20px;">
     <button type="button" style="background-color: #f3c217" class="btn btn-warning" onclick="location.href='add-project.php'" >ADD NEW PROJECT</button>
     <button type="button" style="background-color: #f3c217" class="btn btn-warning" onclick="location.href='update-project.php'" >UPDATE PROJECT</button>
     <!-- <li><a href="#" class="search-btn">SEARCH</a></li>-->
-</div><br>
+</div>
+<?php } ?>
+<br>
 <!-- end internal-header -->
 <section class="all-projects">
     <div class="container">
@@ -49,7 +51,7 @@
                     <figure> <img src="<?php echo SCRIPT_ROOT; echo $npresult[$i]->p_photo ?>" alt="Image">
                         <figcaption>
                             <div class="table">
-                                <div class="inner"><?php echo $npresult[$i]->p_name ?></div>
+                                <div style="color: white" class="inner"><?php echo $npresult[$i]->p_name ?></div>
                             </div>
                         </figcaption>
                     </figure>

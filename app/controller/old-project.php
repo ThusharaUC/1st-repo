@@ -46,5 +46,15 @@ if (isset($_POST['p-name'])) {
 
     $query = "UPDATE projects SET progress='$progress' WHERE p_name='$p_name'";
     $result=$db->query($query);
-
-}else{echo "ffff";}
+    echo '<body class="col-sm-12" style="background-color:rgba(0,0,0,.4) ">
+<div  class="log"><h3 class="log-text">PROJECT UPDATED</h3></div>
+</body>
+';
+    header('Refresh: 2 ; url= '.$_SERVER["HTTP_REFERER"]);
+}else{
+    echo '<body class="col-sm-12" style="background-color:rgba(0,0,0,.4) ">
+<div  class="log"><h3 class="log-text">PROJECT UPDATE FAIL</h3></div>
+</body>
+';
+    header('Refresh: 2 ; url= '.$_SERVER["HTTP_REFERER"]);
+}
