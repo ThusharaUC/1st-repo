@@ -68,9 +68,11 @@
                         <label>
                             <select class='type' name="type" required>
                                 <option value="">[-Select type-]</option>
-                                <option value="Road">Road</option>
+                                <option value="Road & Highways"> Road & Highways</option>
                                 <option value="Building">Building</option>
                                 <option value="Renovation">Renovation</option>
+                                <option value="Water Supply" >Water Supply & Drainge Systems</option>
+                                <option value="Paving blocks" >Paving blocks</option>
                                 <option value="Other">Other</option>
                             </select>
                         </label>
@@ -85,12 +87,16 @@
                     <!-- end form-group -->
                     <div class="col-lg-3 col-sm-3">
                         <div class="form-group">
-                            <div class="form-group">
-                                <label>Progress</label>
-                                <input type="number" placeholder="Progress" name="progress">
-                            </div>
+                            <label>Progress</label>
+                            <input type="number" placeholder="Progress" name="progress">
+                        </div>
+                        <div class="form-group">
                             <label>Project Location</label>
                             <input type="text" placeholder="Project Location" name="p-location">
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea type="text" placeholder="Description" name="description"></textarea>
                         </div>
                         <div class="form-group">
                             <button id='btn-signup' type="submit" >Save</button>

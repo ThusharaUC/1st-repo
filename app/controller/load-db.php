@@ -27,3 +27,12 @@ $photocnt=$db->query($photo)->count();
 
 $donepro=$db->query("SELECT * FROM projects WHERE progress='100%'")->count();
 $newpro=$db->query("SELECT * FROM projects WHERE progress='0%'")->count();
+
+
+$news=$db->query("SELECT * FROM projects ORDER BY id DESC Limit 4")->result();
+/*echo $qq[0]->id;echo "<br>";
+echo $qq[1]->id;echo "<br>";
+echo $qq[2]->id;
+echo"<br>";
+echo date('M', strtotime($qq[0]->date));
+echo date('d', strtotime($qq[0]->date));*/

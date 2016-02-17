@@ -64,10 +64,37 @@
                     <div class="info">
                         <h5><?php echo $npresult[$i]->p_name ?></h5>
                         <span class="type"><?php echo $npresult[$i]->p_type ?></span>
-                        <span>Location : <?php echo $npresult[$i]->p_location ?></span>
-                        <span>Prices : Rs: <?php echo number_format($npresult[$i]->p_value,2); ?></span>
-                        <span>Duration: <?php echo $npresult[$i]->p_period; ?> Month(s)</span>
-                        <a href="search-result.php?p-name=<?php echo $npresult[$i]->p_name ?>">DETAIL</a>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td width="43%" height="27" valign="top"><span><b>Location</b></span></td>
+                                <td width="4%" valign="top" ><span>:</span></td>
+                                <td width="63%" valign="top" ><span>&nbsp; <?php echo $npresult[$i]->p_location ?></span></td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td width="43%" height="27" valign="top"><span><b>Prices</b></span></td>
+                                <td width="4%" valign="top" ><span>: </span></td>
+                                <td width="63%" valign="top" ><span>&nbsp;Rs:&nbsp; <?php echo number_format($npresult[$i]->p_value,2); ?></span></td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td width="43%" height="27" valign="top"><span><b>Duration</b></span></td>
+                                <td width="4%" valign="top" ><span>:</span></td>
+                                <td width="63%" valign="top" ><span>&nbsp;<?php echo $npresult[$i]->p_client ?></span><br><br></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <a href="search-result.php?p-name=<?php echo $npresult[$i]->p_name?>">DETAIL</a>
                     </div>
                     <!-- end info -->
                 </li>
@@ -120,9 +147,37 @@
                     <div class="info">
                         <h5><?php echo $presult[$i]->p_name ?></h5>
                         <span class="type"><?php echo $presult[$i]->p_type ?></span>
-                        <span>Location : Ipanema - RJ</span>
-                        <span>Prices : <?php echo $presult[$i]->p_value ?></span>
-                        <a href="#">DETAIL</a>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td width="43%" height="27" valign="top"><span><b>Location</b></span></td>
+                                <td width="4%" valign="top" ><span>:</span></td>
+                                <td width="63%" valign="top" ><span>&nbsp; <?php echo $npresult[$i]->p_location ?></span></td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td width="43%" height="27" valign="top"><span><b>Prices</b></span></td>
+                                <td width="4%" valign="top" ><span>: </span></td>
+                                <td width="63%" valign="top" ><span>&nbsp;Rs:&nbsp; <?php echo number_format($npresult[$i]->p_value,2); ?></span></td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td width="43%" height="27" valign="top"><span><b>Duration</b></span></td>
+                                <td width="4%" valign="top" ><span>:</span></td>
+                                <td width="63%" valign="top" ><span>&nbsp;<?php echo $npresult[$i]->p_client ?></span><br><br></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <a href="search-result.php?p-name=<?php echo $npresult[$i]->p_name?>">DETAIL</a>
                     </div>
                     <!-- end info -->
                 </li>

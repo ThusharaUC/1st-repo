@@ -172,7 +172,7 @@
                     <div class="title-box"> DOWNLOAD BROCHURE </div>
                     <div class="content"> <img src="../../public/images/icon7.png" alt="Image" class="icon">
                         <p>When I came in he cleared the books and papers </p>
-                        <a href="#">CLICK HERE</a> </div>
+                        <a href="../controller/download.php?file=Profile-Web.pdf">CLICK HERE</a> </div>
                 </div>
                 <!-- end brochure -->
             </div>
@@ -208,25 +208,25 @@
             <div class="col-md-3 col-sm-6">
                 <figure><img src="../../public/images/icon1.jpg" alt="Image"></figure>
                 <h4>CIMENTO</h4>
-                <p>When I came in he cleared the books and papers from the table, and with him I went into plans and </p>
+                <p>Arrive soon..</p>
             </div>
             <!-- end col-3 -->
             <div class="col-md-3 col-sm-6">
                 <figure><img src="../../public/images/icon2.jpg" alt="Image"></figure>
                 <h4>TRUCK</h4>
-                <p>When I came in he cleared the books and papers from the table, and with him I went into plans and </p>
+                <p>Arrive Soon.. </p>
             </div>
             <!-- end col-3 -->
             <div class="col-md-3 col-sm-6">
                 <figure><img src="../../public/images/icon3.jpg" alt="Image"></figure>
                 <h4>DIGGER</h4>
-                <p>When I came in he cleared the books and papers from the table, and with him I went into plans and </p>
+                <p>Arrive Soon.. </p>
             </div>
             <!-- end col-3 -->
             <div class="col-md-3 col-sm-6">
                 <figure><img src="../../public/images/icon4.jpg" alt="Image"></figure>
                 <h4>FORKLIFT</h4>
-                <p>When I came in he cleared the books and papers from the table, and with him I went into plans and </p>
+                <p>Arrive Soon.. </p>
             </div>
             <!-- end col-3 -->
         </div>
@@ -397,17 +397,17 @@
             <div class="col-md-6 col-sm-12">
                 <div class="titles">
                     <h6>ALL ABOUT US</h6>
-                    <h2>CONTRACTOR</h2>
+                    <h2>SIDATH CONSTRUCTION</h2>
                 </div>
                 <!-- end title -->
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">ABOUT CONTRUCTOR <i class="ion-chevron-down"></i></a> </h4>
+                            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">ABOUT SIDATH CONSTRUCTION <i class="ion-chevron-down"></i></a> </h4>
                         </div>
                         <!-- end panel-heading -->
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body"> <img src="../../public/images/image2.jpg" alt="Image" class="thumb-image"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua</div>
+                            <div class="panel-body"> <img src="../../public/images/image2.jpg" alt="Image" class="thumb-image"> SIDATH construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years 5 construction site, have been constructed.</div>
                             <!-- end panel-body -->
                         </div>
                         <!-- end panel-collapse -->
@@ -427,11 +427,13 @@
                     <!-- end panel-default -->
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">OUR OFFICES <i class="ion-chevron-down"></i></a> </h4>
+                            <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">OUR OFFICE <i class="ion-chevron-down"></i></a> </h4>
                         </div>
                         <!-- end panel-heading -->
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body"> <img src="../../public/images/image5.jpg" alt="Image" class="thumb-image"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put</div>
+                            <div class="panel-body"> <img src="../../public/images/image5.jpg" alt="Image" class="thumb-image">
+                            2234,<br> Habaraththawela <br> Sewanagala,<br> Sri Lanka <br>70250
+                            </div>
                             <!-- end panel-body -->
                         </div>
                         <!-- end panel-collapse -->
@@ -448,23 +450,17 @@
                 </div>
                 <!-- end title -->
                 <div class="owl-news">
+                    <?php for($i=0;$i<3;$i++){ ?>
                     <div class="item">
-                        <div class="home-news">
-                            <figure> <img src="../../public/images/banner2.jpg" alt="Image"> <span class="date"><b>23</b>JUN</span> </figure>
-                            <small>Writtern by Themezinho</small>
-                            <h3 class="title"><a href="#">Provide contextual feedback messages for typical user actions.</a></h3>
-                        </div>
+                            <div class="home-news">
+                                <figure> <img src="<?php echo SCRIPT_ROOT;echo $news[$i]->p_photo;?>" alt="Image"> <span class="date"><b><?php echo date('d', strtotime($news[$i]->date));?></b><?php echo date('M', strtotime($news[$i]->date));?></span> </figure>
+                                <small>Writtern by SC</small>
+                                <h3 class="title"><a href="#">We newly start <?php echo $news[$i]->p_name;?> in <?php echo $news[$i]->p_location;?> .</a></h3>
+
+                            </div>
                         <!-- end home-news -->
                     </div>
-                    <!-- end item -->
-                    <div class="item">
-                        <div class="home-news">
-                            <figure> <img src="../../public/images/banner3.jpg" alt="Image"> <span class="date"><b>30</b>MAR</span> </figure>
-                            <small>Writtern by Themezinho</small>
-                            <h3 class="title"><a href="#">High life accusamus terry richardson ad squid</a></h3>
-                        </div>
-                        <!-- end home-news -->
-                    </div>
+                    <?php } ?>
                     <!-- end item -->
                 </div>
                 <!-- end owl-news -->
@@ -476,95 +472,9 @@
     <!-- end container -->
 </section>
 <!-- end features-news -->
-<!--<section class="logos">
-    <div class="container">
-        <div class="row">-->
-            <!--<h2>LOGOS</h2>-->
-<!--            <div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo1.png" alt="Image"> </div>-->
-            <!-- end col-2 -->
-            <!--<div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo2.png" alt="Image"> </div>-->
-            <!-- end col-2 -->
-            <!--<div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo3.png" alt="Image"> </div>-->
-            <!-- end col-2 -->
-            <!--<div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo4.png" alt="Image"> </div>-->
-            <!-- end col-2 -->
-            <!--<div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo5.png" alt="Image"> </div>-->
-            <!-- end col-2 -->
-            <!--<div class="col-md-2 col-sm-4 col-xs-6"> <img src="../../public/images/logo6.png" alt="Image"> </div>-->
-            <!-- end col-2 -->
-      <!--  </div>-->
-        <!-- end row -->
-    <!--</div>-->
-    <!-- end container -->
-<!--</section>-->
-<!-- end logos -->
-<section class="testimonials">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="titles">
-                    <h6>HAPPY CLIENTS SAYS</h6>
-                    <h2>TESTIMONIALS</h2>
-                </div>
-                <!-- end title -->
-                <div class="owl-testimonials">
-                    <div class="item">
-                        <figure> <img src="../../public/images/client1.jpg" alt="Image"> </figure>
-                        <h3>Air Products</h3>
-                        <small>General Manager</small>
-                        <p>Global business of creating physical infrastructure such as dams, highways, bridges, factories, airports, and power plants. It also includes millions of smaller projects to protect human activity with walls, roofs, and floors. Also</p>
-                    </div>
-                    <!-- end item -->
-                    <div class="item">
-                        <figure> <img src="../../public/images/client2.jpg" alt="Image"> </figure>
-                        <h3>Creative Commons</h3>
-                        <small>Architect - Engineer</small>
-                        <p>Construction included is the provision for electricity, lighting, heating, and cooling for people who live and work in those buildings.Construction and building are heavily regulated at all levels of government and by codes and standards.</p>
-                    </div>
-                    <!-- end item -->
-                    <div class="item">
-                        <figure> <img src="../../public/images/client3.jpg" alt="Image"> </figure>
-                        <h3>Bitbucket</h3>
-                        <small>Marketting Manager</small>
-                        <p>Engineers at Forest Products Laboratory have constructed a low-cost safe room prototype out of ordinary lumber that can withstand winds up to 250 mph. If brought to market, the safe room can be purchased as a kit and assembled at home, using basic tools</p>
-                    </div>
-                    <!-- end item -->
-                </div>
-                <!-- end carousel -->
-            </div>
-            <!-- end col-12 -->
-        </div>
-        <!-- end row -->
-    </div>
-    <!-- end container -->
-</section>
-<!-- end testimonials -->
-<!--<section class="newsletter">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-7 col-xs-12">
-                <div class="titles">
-                    <h6>SIGN UP FOR OUR </h6>
-                    <h2>NEWSLETTER</h2>
-                </div>
-                <!-- end title ->
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Your e-mail">
-                        <button type="submit">SUBSCRIBE</button>
-                    </div>
-                    <small>I promise, we won’t spam you!</small>
-                </form>
-            </div>
-            <!-- end col-8 ->
-            <div class="col-md-4 col-sm-5 hidden-xs"> <img src="../../public/images/newsletter-image.png" alt="Image" class="image"> </div>
-            <!-- end col-4 ->
-        </div>
-        <!-- end row ->
-    </div>
-    <!-- end container ->
-</section>-->
-<!-- end newsletter -->
+
+
+
 <?php include '../templates/footer.php';?>
 
 <!-- end footer -->

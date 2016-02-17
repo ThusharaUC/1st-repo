@@ -21,8 +21,22 @@
         <div class="row">
             <div class="col-md-8">
                 <figure><img src="../../public/images/image10.jpg" alt="Image"></figure>
-                <p class="lead">We have completed and continue to execute many international superstructure/infrastructure projects abroad and in Turkey</p>
-                <p>Constructor family began construction business in 1943. The first governmental contract was the State Building Construction in Gazipa?a, Antalya in 1947. In the following years thousands of residential apartment buildings, industrial sites, shopping malls, sites, roads etc have been succesfully completed. During more than 60 years 4 million m2 construction area, more than 40.000 residentials have been constructed. The urban development of Adana has been mentioned together with the name of our company in construction field for many years. In 1985, our expanding organization has been changed as Constructor Company Inc </p>
+                <p class="lead">We have completed and continue to execute many local superstructure/infrastructure projects  in Sri Lanka</p>
+                <p>SIDATH construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years 5 construction site, have been constructed.  </p>
+            </div>
+
+
+            <div class="col-md-8">
+                <br><br><br>
+                <p class="lead">We are Specialized for</p>
+                <ul>
+                    <li><i class="ion-checkmark" style="color:#f3c217;"> </i> Road & Highways</li>
+                    <li><i class="ion-checkmark" style="color:#f3c217;"> </i>Housing Schemes</li>
+                    <li><i class="ion-checkmark" style="color:#f3c217;"> </i>Office Complexes</li>
+                    <li><i class="ion-checkmark" style="color:#f3c217;"> </i>Water Supply & Drainge Systems</li>
+                    <li><i class="ion-checkmark" style="color:#f3c217;"> </i>Sumps & Water distribution systems</li>
+                    <li><i class="ion-checkmark" style="color:#f3c217;"> </i>Paving blocks</li>
+                </ul>
             </div>
             <!-- end col-8 -->
             <div class="col-md-4">
@@ -33,7 +47,7 @@
                         </div>
                         <!-- end panel-heading -->
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body"> <img src="../../public/images/image2.jpg" alt="Image" class="thumb-image"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua</div>
+                            <div class="panel-body"> <img src="../../public/images/image2.jpg" alt="Image" class="thumb-image"> SIDATH construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years 5 construction site, have been constructed.</div>
                             <!-- end panel-body -->
                         </div>
                         <!-- end panel-collapse -->
@@ -45,7 +59,7 @@
                         </div>
                         <!-- end panel-heading -->
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body"> <img src="../../public/images/image6.jpg" alt="Image" class="thumb-image"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put </div>
+                            <div class="panel-body"> <img src="../../public/images/image6.jpg" alt="Image" class="thumb-image"> We are happy to say about our work force. They are specialized for many field & we have over 50 service crowd </div>
                             <!-- end panel-body -->
                         </div>
                         <!-- end panel-collapse -->
@@ -53,11 +67,13 @@
                     <!-- end panel-default -->
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">OUR OFFICES <i class="ion-chevron-down"></i></a> </h4>
+                            <h4 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">OUR OFFICE <i class="ion-chevron-down"></i></a> </h4>
                         </div>
                         <!-- end panel-heading -->
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body"> <img src="../../public/images/image5.jpg" alt="Image" class="thumb-image"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put</div>
+                            <div class="panel-body"> <img src="../../public/images/image5.jpg" alt="Image" class="thumb-image">
+                                2234,<br> Habaraththawela <br> Sewanagala,<br> Sri Lanka <br>70250
+                            </div>
                             <!-- end panel-body -->
                         </div>
                         <!-- end panel-collapse -->
@@ -79,34 +95,34 @@
             <div class="col-md-2">
                 <figure><img src="../../public/images/team-member1.jpg" alt="Image"></figure>
                 <figcaption>
-                    <h4>CIVIL ENGINEER</h4>
-                    <small>George S. Lucas</small></figcaption>
+                    <h4>CIVIL ENGINEER-FOUNDER</h4>
+                    <small>Sidath Chathuranga</small></figcaption>
             </div>
             <!-- end col-2 -->
             <div class="col-md-2">
                 <figure><img src="../../public/images/team-member2.jpg" alt="Image"></figure>
                 <figcaption>
-                    <h4>SENIOR ARCHITECHT</h4>
-                    <small>Paulinho Sabia</small></figcaption>
+                    <h4>SENIOR SUPERVISOR</h4>
+                    <small>T Chandanalal</small></figcaption>
             </div>
             <!-- end col-2 -->
             <div class="col-md-2">
                 <figure><img src="../../public/images/team-member3.jpg" alt="Image"></figure>
                 <figcaption>
-                    <h4>MACHINE ENGINEER</h4>
-                    <small>Ricky Mc allister</small></figcaption>
+                    <h4>SENIOR ACCOUNTANT</h4>
+                    <small>(Mrs)G Dahanayake</small></figcaption>
             </div>
             <!-- end col-2 -->
             <div class="col-md-2">
                 <figure><img src="../../public/images/team-member4.jpg" alt="Image"></figure>
                 <figcaption>
-                    <h4>JUNIOR MANEGER</h4>
-                    <small>Toni Almeida</small></figcaption>
+                    <h4>JUNIOR SUPERVISOR</h4>
+                    <small>Kushil Maduranga</small></figcaption>
             </div>
             <!-- end col-2 -->
             <div class="col-md-4">
                 <h2>AMAZING TEAM</h2>
-                <p>When I came in he cleared the books and papers from the table, and with him.</p>
+                <p>We have most skillful superb team.</p>
                 <img src="../../public/images/signature.jpg" alt="Image" class="signature">
             </div>
             <!-- end col-4 -->
@@ -207,13 +223,13 @@
             <!-- end col-7 -->
             <div class="col-lg-5 col-md-6 col-sm-12 spacing">
                 <ul>
-                    <li> <i class="ion-ios-home-outline"></i> <span class="counter">52,147</span>
+                    <li> <i class="ion-ios-home-outline"></i> <span class="counter"><?php echo $donepro;?></span>
                         <h4>PROJECTS DONE</h4>
                     </li>
-                    <li> <i class="ion-ios-gear-outline"></i> <span class="counter">66,147</span>
+                    <li> <i class="ion-ios-gear-outline"></i> <span class="counter"><?php echo $npcount;?></span>
                         <h4>UPCOMING PROJECTS</h4>
                     </li>
-                    <li> <i class="ion-ios-flag-outline"></i> <span class="counter">23,147</span>
+                    <li> <i class="ion-ios-flag-outline"></i> <span class="counter"><?php echo $newpro;?></span>
                         <h4>NEW PROJECTS</h4>
                     </li>
                 </ul>
@@ -230,16 +246,16 @@
         <div class="row">
             <div class="col-md-8 col-sm-7 col-xs-12">
                 <div class="titles">
-                    <h6>SIGN UP FOR OUR </h6>
-                    <h2>NEWSLETTER</h2>
+                    <!--<h6>SIGN UP FOR OUR </h6>
+                    <h2>NEWSLETTER</h2>-->
                 </div>
                 <!-- end title -->
-                <form>
+                <form><!--
                     <div class="form-group">
                         <input type="text" placeholder="Your e-mail">
                         <button type="submit">SUBSCRIBE</button>
                     </div>
-                    <small>I promise, we won’t spam you!</small>
+                    <small>I promise, we won’t spam you!</small>-->
                 </form>
             </div>
             <!-- end col-8 -->

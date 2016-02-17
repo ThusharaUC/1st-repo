@@ -18,7 +18,7 @@ if (isset($_POST['p-name'])) {
     if (!file_exists("../../public/images/photo_gallery/" . $txtGalleryName)) {
         mkdir("../../public/images/photo_gallery/" . $txtGalleryName, 0777, true);
     }
-    echo $_FILES["files"]["tmp_name"][0];
+
     foreach ($_FILES["files"]["tmp_name"] as $key => $tmp_name) {
         $nfile_name=$_FILES["files"]["name"][$key];
         $file_name=str_replace(" ","_",$nfile_name);
@@ -43,6 +43,7 @@ if (isset($_POST['p-name'])) {
             array_push($error, "$file_name, ");
         }
     }
+
 
     $query = "UPDATE projects SET progress='$progress' WHERE p_name='$p_name'";
     $result=$db->query($query);

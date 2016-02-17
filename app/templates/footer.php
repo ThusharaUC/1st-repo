@@ -37,8 +37,8 @@
         <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="about-text">
-                    <h4 class="title">CONSTRUCTOR</h4>
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a</p>
+                    <h4 class="title">ABOUT SC </h4>
+                    <p>SIDATH Construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years 5 construction site, have been constructed.</p>
                 </div>
                 <!-- end about-text -->
             </div>

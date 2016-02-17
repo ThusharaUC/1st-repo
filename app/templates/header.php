@@ -32,7 +32,7 @@ $db = DB::getInstance();?>
         <!-- end widget -->
         <div class="widget text">
             <img src="../../public/images/logo1.png" alt="Image">
-            <p>When I came in he cleared the books and papers from the table, and with him I went into plans and</p>
+            <p>SC is one of the best service provider in construction industry for Sri Lanka</p>
         </div>
         <!-- end text -->
         <div class="widget gallery">
@@ -73,16 +73,16 @@ $db = DB::getInstance();?>
     <div class="top-bar ">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-3 hidden-xs">
+                <div class="col-md-7 col-sm-7 hidden-xs">
                     <h5 class="...hidden-sm" >CUSTOMER SERVICE : <b>+94 772 66 80 78 </b></h5>
                     <ul class="social-media">
                         <li><a href="https://www.facebook.com/Sidath-Construction-1511044005867620/"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="https://plus.google.com/u/0/117141415954932621342"><i class="ion-social-googleplus"></i></a></li>
                     </ul>
                 </div>
                 <!-- end col-6 -->
-                <div class="col-md-6 col-sm-9 col-xs-12">
+                <div class="col-md-5 col-sm-5 col-xs-12">
                     <ul class="shop-menu">
                         <?php if ($_SESSION['new_user']==""){ ?>
                             <!--<li><a href="#" data-toggle="modal" data-target="#register-box">REGISTER</a></li>-->
@@ -95,7 +95,7 @@ $db = DB::getInstance();?>
                                     </ul>
                             </div>-->
 
-                            <li style="margin-right: 0px;margin-left: -10px"><a href="../controller/logout.php" class="search-btn"><i class="ion-power"></i> LOGOUT</a></li>
+                            <li style="margin-right: 0px;margin-left: -10px;color: #29282e;"><a href="../controller/logout.php" class="search-btn" ><i class="ion-power"></i> LOGOUT</a></li>
                         <?php } ?>
                     </ul>
 
@@ -118,35 +118,45 @@ $db = DB::getInstance();?>
             <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="mobile-menu">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="home.php" class="transition">HOME</a></li>
-                    <li><a href="about-us.php" class="transition">ABOUT US</a></li>
+                    <li class="dropdown"> <a href="#">ABOUT US</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="about-us.php" class="transition">ABOUT COMPANY</a></li>
+                            <li><a href="certificate.php" class="transition">CERTIFICATES</a></li>
+                        </ul>
+                    </li>
                     <li class="dropdown"> <a href="#">PAGES</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="404.php" class="transition">CERTIFICATES</a></li>
+
                             <li><a href="projects.php" class="transition">PROJECTS</a></li>
                             <li><a href="404.php" class="transition">PROMO VIDEO</a></li>
-                            <li><a href="404.php" class="transition">CAREER</a></li>
+                            <!--<li><a href="404.php" class="transition">CAREER</a></li>
                             <li><a href="404.php" class="transition">ELEMENTS</a></li>
-                            <li><a href="404.php" class="transition">TYPOGRAPHY</a></li>
-                            <li><a href="clientlist.php" class="transition">CLIENT LIST</a></li>
+                            <li><a href="404.php" class="transition">TYPOGRAPHY</a></li>-->
+
 
                         </ul>
                     </li>
                     <li><a href="gallery.php" class="transition">GALLERY</a></li>
                     <li class="dropdown"> <a href="#">SERVICES</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="404.php" class="transition">CUSTOMIZATION</a></li>
+                            <li><a href="404.php" class="transition">ROAD & HIGHWAYS</a></li>
                             <li><a href="404.php" class="transition">RENOVATION</a></li>
-                            <li><a href="404.php" class="transition">ROOF SOLUTIONS</a></li>
+                            <li><a href="404.php" class="transition">BUILDINGS</a></li>
+                            <li><a href="404.php" class="transition">WATER SUPPLY & DRAINGE SYSTEMS</a></li>
+                            <li><a href="404.php" class="transition">PAVING BLOCK</a></li>
+                            <!--<li><a href="404.php" class="transition">ROOF SOLUTIONS</a></li>
                             <li><a href="404.php" class="transition">KITCHEN REDESIGNING</a></li>
                             <li><a href="404.php" class="transition">INTERIOR DESIGNS</a></li>
                             <li><a href="404.php" class="transition">LANDSCAPE - GARDEN</a></li>
-                            <li><a href="404.php" class="transition">PARQUET FLOORS</a></li>
+                            <li><a href="404.php" class="transition">PARQUET FLOORS</a></li>-->
                         </ul>
                     </li>
+                    <li><a href="contact-us.php" class="transition">CONTAT US</a></li>
                     <?php if ($_SESSION['new_user']!=""){ ?>
                         <li class="dropdown"> <a href="#">ADMIN</a>
-                            <ul class="dropdown-menu" role="menu">   <li><a href="blog.html" class="transition">BLOG LIST</a></li>
+                            <ul class="dropdown-menu" role="menu">
                                 <li><a href="clientlist.php" class="transition">CLIENT LIST</a></li>
+                                <li><a href="clientmsg.php" class="transition">CLIENT MESSAGES</a></li>
                             </ul>
                         </li>
                     <?php } ?>

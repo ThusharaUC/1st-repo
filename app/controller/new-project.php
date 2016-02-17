@@ -6,16 +6,18 @@ include '../core/init.php';
 include '../models/dbConfig.php';
 include '../templates/head.php';
 $db=DB::getInstance();
-echo $_POST['p-name'];
+
 if (isset($_POST['p-name'])) {
     $p_name = $_POST['p-name'];
     $c_name = $_POST['c-name'];
-    $compnay = $_POST['c-company'];
+    $companay = $_POST['c-company'];
     $value = $_POST['p-value'];
     $type = $_POST['type'];
     $duration = $_POST['p-duration'];
     $progress = $_POST['progress'];
     $locat = $_POST['p-location'];
+    $des=$_POST['description'];
+    $date=date("Y/m/d");
     extract($_POST);
     $error=array();
     $extension=array("jpeg","jpg","png","gif","JPEG","JPG","PNG","GIF");
@@ -23,7 +25,7 @@ if (isset($_POST['p-name'])) {
     if (!file_exists("../../public/images/photo_gallery/".$txtGalleryName)) {
         mkdir("../../public/images/photo_gallery/".$txtGalleryName, 0777, true);
     }
-    echo $_FILES["files"]["tmp_name"][0];
+
     foreach($_FILES["files"]["tmp_name"] as $key=>$tmp_name)
     {
         $nfile_name=$_FILES["files"]["name"][$key];
@@ -54,9 +56,9 @@ if (isset($_POST['p-name'])) {
         }
     }
 
-
-    $query = "INSERT IGNORE INTO projects(p_name,p_client,c_company,p_type, p_value,p_period, p_photo, progress) VALUES ('$p_name','$c_name','$compnay','$type','$value','$duration','$path','$progress','$locat')";
+    $query = "INSERT INTO projects(date,p_name,p_client,c_company,p_type, p_value,p_period, p_photo, progress,p_location,description) VALUES ('$date','$p_name','$c_name','$companay','$type','$value','$duration','$path','$progress','$locat','$des')";
     $result=$db->query($query);
+
     echo '<body class="col-sm-12" style="background-color:rgba(0,0,0,.4) ">
 <div  class="log"><h3 class="log-text">PROJECT ADDED</h3></div>
 </body>

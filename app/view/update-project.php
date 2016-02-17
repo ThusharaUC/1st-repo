@@ -48,6 +48,7 @@
                         <label>Progress</label>
                         <input type="number" placeholder="Progress" name="progress">
                     </div>
+
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="form-group">

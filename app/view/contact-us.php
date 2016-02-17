@@ -74,7 +74,7 @@
             </div>
             <!-- end col-12 -->
             <div class="col-xs-12">
-                <form class="contact-form" id="contact" name="contact" method="post">
+                <form class="contact-form" id="contact" action="../controller/contact.php" name="contact" method="post">
                     <div class="form-group">
                         <label>Your name</label>
                         <input type="text" name="name" id="name" required>

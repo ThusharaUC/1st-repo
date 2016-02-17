@@ -53,21 +53,30 @@ jQuery(document).ready(function($) {
             }
         },
 		submitHandler: function(form) {
+            var m_data = new FormData();
+            m_data.append( 'name',  document.getElementById("name").value);
+            m_data.append( 'email',  document.getElementById("email").value);
+            m_data.append( 'phone', document.getElementById("phone").value);
+            m_data.append( 'city',  document.getElementById("city").value);
+            m_data.append( 'subject', document.getElementById("subject").value);
+            m_data.append( 'message', document.getElementById("message").value);
             $(form).ajaxSubmit({
+                url:"../controller/contact.php",
                 type:"POST",
-                data: $(form).serialize(),
-                url:"process.php",
+                data: m_data,
+                dataType:'json',
                 success: function() {
+                    alert(data);
                     $('#contact :input').attr('disabled', 'disabled');
                     $('#contact').fadeTo( "slow", 0.15, function() {
                         $(this).find(':input').attr('disabled', 'disabled');
                         $(this).find('label').css('cursor','default');
-                        $('#success').fadeIn();
+                        $('#success').fadeIn(600);
                     });
                 },
                 error: function() {
                     $('#contact').fadeTo( "slow", 0.15, function() {
-                        $('#error').fadeIn();
+                        $('#error').fadeIn(600);
                     });
                 }
             });
