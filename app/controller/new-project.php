@@ -40,6 +40,8 @@ if (isset($_POST['p-name'])) {
                 move_uploaded_file($file_tmp=$_FILES["files"]["tmp_name"][$key],"../../public/images/photo_gallery/".$txtGalleryName."/".$file_name);
                 $path_name="/photo_gallery/".$txtGalleryName."/".$file_name;
                 $path=str_replace(" ","_",$path_name);
+                $query1 = "INSERT INTO photos(path) VALUES ('$path')";
+                $res = $db->query($query1)->result();
             }
             else
             {
@@ -48,6 +50,8 @@ if (isset($_POST['p-name'])) {
                 move_uploaded_file($file_tmp=$_FILES["files"]["tmp_name"][$key],"../../public/images/photo_gallery/".$txtGalleryName."/".$newFileName);
                 $path_name="/photo_gallery/".$txtGalleryName."/".$newFileName;
                 $path=str_replace(" ","_",$path_name);
+                $query1 = "INSERT INTO photos(path) VALUES ('$path')";
+                $res = $db->query($query1)->result();
             }
         }
         else

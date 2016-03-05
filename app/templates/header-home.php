@@ -24,7 +24,7 @@ $db = DB::getInstance();?>
             <form action="search-result.php" method="get">
                 <input type="text" placeholder="Project Name" name="p-name" id="project" autocomplete="off" onkeyup="suggest(this.value);"                                  onblur="fill();" required/>
                 <div class="searchBox display_box" id="search" style="display: none;">
-                    <div class="suggestionList" id="searchList"> &nbsp; <br></div>
+                    <div style="width: 190px;" class="suggestionList" id="searchList"> &nbsp; <br></div>
                 </div>
                 <button type="submit">GO</button>
             </form>
@@ -46,15 +46,17 @@ $db = DB::getInstance();?>
         </div>
         <!-- end gallery -->
         <div class="widget responsive">
-            <img src="../../public/images/icon-responsive.png" alt="Image">
-            <h5>RESPONSIVE DESIGN</h5>
+            <img src="../../public/images/icon-responsive.png" alt="Image"><br>
+            <a href="#" ><h6><br>info@sidathconstruction.com<br></h6></a>
+            <a href="#" ><h6>sidathconstruction@gmail.com<br></h6></a>
+            <h6><b>+94 772 66 80 78 </b></h6>
         </div>
         <!-- end responsive -->
         <div class="widget social-media">
             <ul>
-                <li><a href="https://www.facebook.com/Sidath-Construction-1511044005867620/"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/Sidath-Construction-1511044005867620/" target="_blank"><i class="ion-social-facebook"></i></a></li>
                 <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/117141415954932621342" target="_blank"><i class="ion-social-googleplus"></i></a></li>
                 <li><a href="#"><i class="ion-social-instagram"></i></a></li>
                 <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
             </ul>
@@ -73,7 +75,7 @@ $db = DB::getInstance();?>
     <div class="top-bar">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-3 hidden-xs">
+                <div class="col-md-7 col-sm-12 hidden-xs">
                     <h5 class="...hidden-sm" >CUSTOMER SERVICE : <b>+94 772 66 80 78 </b></h5>
                     <ul class="social-media">
                         <li><a href="https://www.facebook.com/Sidath-Construction-1511044005867620/" target="_blank"><i class="ion-social-facebook"></i></a></li>
@@ -82,23 +84,18 @@ $db = DB::getInstance();?>
                     </ul>
                 </div>
                 <!-- end col-6 -->
-                <div class="col-md-6 col-sm-9 col-xs-12">
+                <div class="col-md-5 col-sm-0 col-xs-12">
                     <ul class="shop-menu">
                         <?php if ($_SESSION['new_user']==""){ ?>
-                        <!--<li><a href="#" data-toggle="modal" data-target="#register-box">REGISTER</a></li>-->
-                        <li><a href="#" data-toggle="modal" data-target="#login-box">LOGIN</a></li>
+                            <!--<li><a href="#" data-toggle="modal" data-target="#register-box">REGISTER</a></li>-->
+                            <li><a href="#" data-toggle="modal" data-target="#login-box">LOGIN</a></li>
                         <?php } ?>
                         <?php if ($_SESSION['new_user']!=""){ ?>
-                        <li style="margin-right: 0px;margin-left: -10px;"><a href="../controller/logout.php" class="search-btn" "><i class="ion-power"></i> LOGOUT</a></li>
+                            <li style="margin-right: 0px;margin-left: -10px;color: #29282e;"><a href="../controller/logout.php" class="search-btn" ><i class="ion-power"></i> LOGOUT</a></li>
                         <?php } ?>
                     </ul>
 
-                    <div class="language dropdown hidden-xs"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <img src="../../public/images/en.png" alt="Image"> ENGLISH <i class="ion-arrow-down-b"></i></a>
-                        <!--<ul class="dropdown-menu" role="menu">
-                            <li><a href="index-slider.html" class="transition"><img src="images/tr.png" alt="Image"> TURKISH</a></li>
-                            <li><a href="index-slider.html" class="transition"><img src="images/br.png" alt="Image"> PORTUGUES</a></li>
-                            <li><a href="index-slider.html" class="transition"><img src="images/fr.png" alt="Image"> FRENCH</a></li>
-                        </ul>-->
+                    <div class="language dropdown hidden-xs"> <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <img src="../../public/images/en.png" alt="Image"> ENGLISH
                     </div>
                     <!-- end language -->
                 </div>
@@ -116,7 +113,7 @@ $db = DB::getInstance();?>
                 <a class="navbar-brand" href="<?php echo SCRIPT_ROOT ?>"><img src="../../public/images/logo1.png" alt="Image"></a> </div>
             <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="mobile-menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="home.php" class="transition">HOME</a></li>
+                    <li><a href="" class="transition">HOME</a></li>
                     <li class="dropdown"> <a href="#">ABOUT US</a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="about-us.php" class="transition">ABOUT COMPANY</a></li>
@@ -149,8 +146,9 @@ $db = DB::getInstance();?>
                             <li><a href="404.php" class="transition">PARQUET FLOORS</a></li>-->
                         </ul>
                     </li>
-
+                    <?php if ($_SESSION['new_user']==""){ ?>
                     <li><a href="contact-us.php" class="transition">CONTAT US</a></li>
+                    <?php } ?>
                     <?php if ($_SESSION['new_user']!=""){ ?>
                     <li class="dropdown"> <a href="#">ADMIN</a>
                         <ul class="dropdown-menu" role="menu">

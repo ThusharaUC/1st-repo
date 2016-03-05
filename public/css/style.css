@@ -659,8 +659,8 @@ ul.filter li{ display:inline-block;}
 ul.filter li a{ width:20px; height:5px; float:left; text-indent:-9999px; background:#eee;}
 ul.filter li .current{ background:#f3c217;}
 /* PROGRESS BARS */
-.progress{ width:100%; height:20px; float:left; overflow:inherit; box-shadow:none; background:#ccc; border-radius:0; margin:10px 0;}
-.progress .progress-bar{ background:#f3c217; box-shadow:none;}
+.progress{ width:100%; height:20px; float:left; overflow:inherit; box-shadow:none; background:#ccc;  border: 1px solid #000;border-radius:0; margin:10px 0;}
+.progress .progress-bar{ background:#f3c217;box-shadow:none;}
 
 
 
@@ -674,7 +674,7 @@ ul.filter li .current{ background:#f3c217;}
 .all-projects ul li figure figcaption{ width:100%; height:100%; text-align:center; color:#000; background:rgba(0,0,0,0.8); position:absolute; left:0; top:0; opacity:0;}
 .all-projects ul li figure:hover figcaption{ opacity:1;}
 .all-projects ul li .info{ width:100%; float:left; margin-bottom:20px;}
-.all-projects ul li .info h5{ color:#f3c217; font-size:22px;}
+.all-projects ul li .info h5{ color:#ff0000; font-size:22px;}
 .all-projects ul li .info span{ width:100%; float:left; font-size:15px;}
 .all-projects ul li .info .type{ font-family:'Merriweather', serif; margin-bottom:12px; font-size:20px;}
 .all-projects ul li .info a{ float:left; margin-top:10px; border:2px solid #f3c217; padding:3px 12px; color:#f3c217;}

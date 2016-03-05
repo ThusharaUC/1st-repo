@@ -38,7 +38,7 @@
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="about-text">
                     <h4 class="title">ABOUT SC </h4>
-                    <p>SIDATH Construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years 5 construction site, have been constructed.</p>
+                    <p>SIDATH Construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years many construction site, have been constructed.</p>
                 </div>
                 <!-- end about-text -->
             </div>
@@ -47,7 +47,7 @@
                 <h4 class="title">PHOTO GALLERY</h4>
                 <ul class="gallery-thumbs">
                     <?php
-                    include '../controller/load-db.php';
+
                     for ($i=0;$i<$photocnt;$i++){echo "
                     <li><a href=".SCRIPT_ROOT. $photores[$i]->path." class='fancybox' rel='gallery'><img src=".SCRIPT_ROOT.$photores[$i]->path." alt='Image'></a></li>";}
                     ?>
@@ -113,7 +113,7 @@
 <script src="../../public/js/jquery.counterup.min.js"></script>
 <script src="../../public/js/scripts.js"></script>
 <script src="../../public/js/jquery.validate.js"></script>
-<script src="../../public/js/google-js.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="../../public/js/google-maps.js" type="text/javascript"></script>
 <script type="text/javascript">
     function suggest(inputString){

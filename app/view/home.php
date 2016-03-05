@@ -171,8 +171,8 @@
                 <div class="brochure">
                     <div class="title-box"> DOWNLOAD BROCHURE </div>
                     <div class="content"> <img src="../../public/images/icon7.png" alt="Image" class="icon">
-                        <p>When I came in he cleared the books and papers </p>
-                        <a href="../controller/download.php?file=Profile-Web.pdf">CLICK HERE</a> </div>
+                        <p>Resume of SIDATH construction </p>
+                        <a href="../controller/download.php?file=SC-Profile.pdf">CLICK HERE</a> </div>
                 </div>
                 <!-- end brochure -->
             </div>
@@ -235,80 +235,6 @@
     <!-- end container -->
 </section>
 <!-- end home-services -->
-<section class="quote background1 overlay-yellow" data-stellar-background-ratio="0.5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h5>MORE INFORMATION FILL UP TO FORM</h5>
-                <h2>LET'S GET OFFER !</h2>
-                <p>Furthermore 5 educational institutions and 18 commercial centers were built by Contractor has later become a group of companies providing services today in construction sector. </p>
-                <a href="get-quote.html">GET QUOTE <i class="ion-chevron-right"></i></a> </div>
-            <!-- end col-12 -->
-        </div>
-        <!-- end row -->
-    </div>
-    <!-- end container -->
-</section>
-<!-- end quote -->
-<section class="about-us">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="titles">
-                    <h6>WE LIKE TO INTRODUCE</h6>
-                    <h2>CONTRACTOR</h2>
-                </div>
-                <!-- end title -->
-            </div>
-            <!-- end col-12 -->
-            <div class="col-md-4 col-sm-12">
-                <div class="left-image">
-                    <figure><img src="../../public/images/image2.jpg" alt="Image"> <span>MAIN OFFICE</span> </figure>
-                </div>
-                <!-- end left-image -->
-            </div>
-            <!-- end col-4 -->
-            <div class="col-md-8 col-sm-12">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <div class="services-box">
-                            <figure><img src="../../public/images/image3.jpg" alt="Image"></figure>
-                            <h4>ABOUT DIGGER</h4>
-                            <p>When I came in he cleared the books and papers from the table, and with him I went into plans and</p>
-                            <ul>
-                                <li>Feedback as to how to get this approved</li>
-                                <li>While I’d be able to provide. </li>
-                                <li>I can only do after it has crossed</li>
-                                <li>certain threshold, quality wise</li>
-                            </ul>
-                        </div>
-                        <!-- end services-box -->
-                    </div>
-                    <!-- end col-6 -->
-                    <div class="col-md-6 col-sm-6">
-                        <div class="services-box">
-                            <figure><img src="../../public/images/image4.jpg" alt="Image"></figure>
-                            <h4>ABOUT WORKERS</h4>
-                            <p>When I came in he cleared the books and papers from the table, and with him I went into plans and</p>
-                            <ul>
-                                <li>Feedback as to how to get this approved</li>
-                                <li>While I’d be able to provide. </li>
-                                <li>I can only do after it has crossed</li>
-                                <li>certain threshold, quality wise</li>
-                            </ul>
-                        </div>
-                        <!-- end services-box -->
-                    </div>
-                    <!-- end col-6 -->
-                </div>
-            </div>
-            <!-- end col-8 -->
-        </div>
-        <!-- end row -->
-    </div>
-    <!-- end container -->
-</section>
-<!-- end about-us -->
 <section class="counter-section">
     <div class="container">
         <div class="row">
@@ -318,7 +244,8 @@
                     <h2>PROJECTS</h2>
                 </div>
                 <!-- end title -->
-                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a</p>
+                <p>We are Specialized for all construction services ,Road & Highways,Housing Schemes,Office Complexes,Water Supply & Drainge Systems,Sumps & Water distribution systems,Paving blocks for Garden area.
+                </p>
                 <a href="projects.php" class="button">READ MORE</a> </div>
             <!-- end col-7 -->
             <div class="col-lg-5 col-md-6 col-sm-12 spacing">
@@ -407,7 +334,7 @@
                         </div>
                         <!-- end panel-heading -->
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body"> <img src="../../public/images/image2.jpg" alt="Image" class="thumb-image"> SIDATH construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years 5 construction site, have been constructed.</div>
+                            <div class="panel-body"> <img src="../../public/images/image6.jpg" alt="Image" class="thumb-image"> SIDATH construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years many construction site, have been constructed.</div>
                             <!-- end panel-body -->
                         </div>
                         <!-- end panel-collapse -->
@@ -419,7 +346,7 @@
                         </div>
                         <!-- end panel-heading -->
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body"> <img src="../../public/images/image6.jpg" alt="Image" class="thumb-image"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put </div>
+                            <div class="panel-body"> <img src="../../public/images/image2.jpg" alt="Image" class="thumb-image"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put </div>
                             <!-- end panel-body -->
                         </div>
                         <!-- end panel-collapse -->

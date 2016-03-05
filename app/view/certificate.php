@@ -5,7 +5,22 @@
  * Time: 9:42 AM
  */
 include '../templates/header.php';?>
-
+    <section class="internal-header overlay-dark" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="title">ABOUT US</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="home.php">Home</a></li>
+                        <li class="active">Certificate</li>
+                    </ol>
+                </div>
+                <!-- end col-12 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
     <section class="gallery">
         <div class="container">
             <div class="row">

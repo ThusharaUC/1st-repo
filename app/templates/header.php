@@ -24,9 +24,9 @@ $db = DB::getInstance();?>
             <form action="search-result.php" method="get">
                 <input type="text" placeholder="Project Name" name="p-name" id="project" autocomplete="off" onkeyup="suggest(this.value);"                                  onblur="fill();" required/>
                 <div class="searchBox display_box" id="search" style="display: none;">
-                    <div class="suggestionList" id="searchList"> &nbsp; <br></div>
+                    <div style="width: 190px;" class="suggestionList" id="searchList"> &nbsp; <br></div>
                 </div>
-                <button type="submit">GO</button>
+                <button style="position: fixed" type="submit">GO</button>
             </form>
         </div>
         <!-- end widget -->
@@ -46,15 +46,17 @@ $db = DB::getInstance();?>
         </div>
         <!-- end gallery -->
         <div class="widget responsive">
-            <img src="../../public/images/icon-responsive.png" alt="Image">
-            <h5>RESPONSIVE DESIGN</h5>
+            <img src="../../public/images/icon-responsive.png" alt="Image"><br>
+            <a href="#" ><h6><br>info@sidathconstruction.com<br></h6></a>
+            <a href="#" ><h6>sidathconstruction@gmail.com<br></h6></a>
+            <h6><b>+94 772 66 80 78 </b></h6>
         </div>
         <!-- end responsive -->
         <div class="widget social-media">
             <ul>
-                <li><a href="https://www.facebook.com/Sidath-Construction-1511044005867620/"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/Sidath-Construction-1511044005867620/" target="_blank"><i class="ion-social-facebook"></i></a></li>
                 <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/117141415954932621342" target="_blank"><i class="ion-social-googleplus"></i></a></li>
                 <li><a href="#"><i class="ion-social-instagram"></i></a></li>
                 <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
             </ul>
@@ -73,28 +75,22 @@ $db = DB::getInstance();?>
     <div class="top-bar ">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-sm-7 hidden-xs">
+                <div class="col-md-7 col-sm-12 ">
                     <h5 class="...hidden-sm" >CUSTOMER SERVICE : <b>+94 772 66 80 78 </b></h5>
                     <ul class="social-media">
-                        <li><a href="https://www.facebook.com/Sidath-Construction-1511044005867620/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/Sidath-Construction-1511044005867620/" target="_blank"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="https://plus.google.com/u/0/117141415954932621342"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="https://plus.google.com/u/0/117141415954932621342" target="_blank"><i class="ion-social-googleplus"></i></a></li>
                     </ul>
                 </div>
                 <!-- end col-6 -->
-                <div class="col-md-5 col-sm-5 col-xs-12">
+                <div class="col-md-5 col-sm-0 col-xs-12">
                     <ul class="shop-menu">
                         <?php if ($_SESSION['new_user']==""){ ?>
                             <!--<li><a href="#" data-toggle="modal" data-target="#register-box">REGISTER</a></li>-->
                             <li><a href="#" data-toggle="modal" data-target="#login-box">LOGIN</a></li>
                         <?php } ?>
                         <?php if ($_SESSION['new_user']!=""){ ?>
-                            <!--<div class="language dropdown "> <a href="#" data-toggle="dropdown" class="dropdown-toggle">  <a href="#"><?php /*echo $_SESSION['user_session']*/?> <i class="ion-arrow-down-b"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="../controller/logout.php" class="transition">Logout</a></li>
-                                    </ul>
-                            </div>-->
-
                             <li style="margin-right: 0px;margin-left: -10px;color: #29282e;"><a href="../controller/logout.php" class="search-btn" ><i class="ion-power"></i> LOGOUT</a></li>
                         <?php } ?>
                     </ul>
@@ -128,7 +124,7 @@ $db = DB::getInstance();?>
                         <ul class="dropdown-menu" role="menu">
 
                             <li><a href="projects.php" class="transition">PROJECTS</a></li>
-                            <li><a href="404.php" class="transition">PROMO VIDEO</a></li>
+                            <li><a href="promo-video.php" class="transition">PROMO VIDEO</a></li>
                             <!--<li><a href="404.php" class="transition">CAREER</a></li>
                             <li><a href="404.php" class="transition">ELEMENTS</a></li>
                             <li><a href="404.php" class="transition">TYPOGRAPHY</a></li>-->
@@ -139,11 +135,11 @@ $db = DB::getInstance();?>
                     <li><a href="gallery.php" class="transition">GALLERY</a></li>
                     <li class="dropdown"> <a href="#">SERVICES</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="404.php" class="transition">ROAD & HIGHWAYS</a></li>
-                            <li><a href="404.php" class="transition">RENOVATION</a></li>
-                            <li><a href="404.php" class="transition">BUILDINGS</a></li>
-                            <li><a href="404.php" class="transition">WATER SUPPLY & DRAINGE SYSTEMS</a></li>
-                            <li><a href="404.php" class="transition">PAVING BLOCK</a></li>
+                            <li><a href="Road-Highways.php" class="transition">ROAD & HIGHWAYS</a></li>
+                            <li><a href="Renovation.php" class="transition">RENOVATION</a></li>
+                            <li><a href="buildings.php" class="transition">BUILDINGS</a></li>
+                            <li><a href="water.php" class="transition">WATER SUPPLY & DRAINGE SYSTEMS</a></li>
+                            <li><a href="Paving.php" class="transition">PAVING BLOCK</a></li>
                             <!--<li><a href="404.php" class="transition">ROOF SOLUTIONS</a></li>
                             <li><a href="404.php" class="transition">KITCHEN REDESIGNING</a></li>
                             <li><a href="404.php" class="transition">INTERIOR DESIGNS</a></li>
@@ -151,7 +147,9 @@ $db = DB::getInstance();?>
                             <li><a href="404.php" class="transition">PARQUET FLOORS</a></li>-->
                         </ul>
                     </li>
-                    <li><a href="contact-us.php" class="transition">CONTAT US</a></li>
+                    <?php if ($_SESSION['new_user']==""){ ?>
+                        <li><a href="contact-us.php" class="transition">CONTAT US</a></li>
+                    <?php } ?>
                     <?php if ($_SESSION['new_user']!=""){ ?>
                         <li class="dropdown"> <a href="#">ADMIN</a>
                             <ul class="dropdown-menu" role="menu">

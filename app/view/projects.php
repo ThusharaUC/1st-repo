@@ -42,6 +42,7 @@
         </div>
         <!-- end row -->
 
+        <div class="col-md-12 col-xs-12">
         <ul>
             <?php
             include '../controller/load-db.php';
@@ -83,7 +84,7 @@
                             <tr>
                                 <td width="43%" height="27" valign="top"><span><b>Prices</b></span></td>
                                 <td width="4%" valign="top" ><span>: </span></td>
-                                <td width="63%" valign="top" ><span>&nbsp;Rs:&nbsp; <?php echo number_format($npresult[$i]->p_value,2); ?></span></td>
+                                <td width="63%" valign="top" ><span> <?php echo number_format($npresult[$i]->p_value,2); ?>&nbsp;Rs:&nbsp;</span></td>
                             </tr>
                             </tbody>
                             <tbody>
@@ -103,7 +104,7 @@
             ?>
             <!-- end project -->
         </ul>
-
+        </div>
         <!-- end projects -->
     </div>
     <!-- end container -->
@@ -134,7 +135,7 @@
                     <figure> <img src="<?php echo SCRIPT_ROOT; echo $presult[$i]->p_photo ?>" alt="Image">
                         <figcaption>
                             <div class="table">
-                                <div class="inner"><?php echo $presult[$i]->p_name ?></div>
+                                <div class="inner" ><?php echo $presult[$i]->p_name ?></div>
                             </div>
                         </figcaption>
                     </figure>
@@ -145,7 +146,7 @@
                     </div>
                     <!-- end progress -->
                     <div class="info">
-                        <h5><?php echo $presult[$i]->p_name ?></h5>
+                        <h5><span style="color: red"><?php echo $presult[$i]->p_name ?></span></h5>
                         <span class="type"><?php echo $presult[$i]->p_type ?></span>
                         <table>
                             <thead>
@@ -166,7 +167,7 @@
                             <tr>
                                 <td width="43%" height="27" valign="top"><span><b>Prices</b></span></td>
                                 <td width="4%" valign="top" ><span>: </span></td>
-                                <td width="63%" valign="top" ><span>&nbsp;Rs:&nbsp; <?php echo number_format($npresult[$i]->p_value,2); ?></span></td>
+                                <td width="63%" valign="top" ><span> <?php echo $npresult[$i]->p_value; ?> Mna</span></td>
                             </tr>
                             </tbody>
                             <tbody>

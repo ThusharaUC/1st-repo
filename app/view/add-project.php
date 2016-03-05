@@ -72,7 +72,7 @@
                                 <option value="Building">Building</option>
                                 <option value="Renovation">Renovation</option>
                                 <option value="Water Supply" >Water Supply & Drainge Systems</option>
-                                <option value="Paving blocks" >Paving blocks</option>
+                                <option value="Paving Blocks" >Paving blocks</option>
                                 <option value="Other">Other</option>
                             </select>
                         </label>

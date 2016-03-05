@@ -20,9 +20,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <figure><img src="../../public/images/image10.jpg" alt="Image"></figure>
+                <p class="lead">Our Vision</p>
+                <p>Be the best service provider in Construction Industry for Sri Lanka</p>
+            </div>
+            <div class="col-md-8">
+                <p class="lead">Our Mission</p>
+                <p>To provide a quality professional service, exceeding customer expectations, by the effective utilisation of all resources, with the best practice of the industry.</p>
+            </div>
+            <div class="col-md-8">
                 <p class="lead">We have completed and continue to execute many local superstructure/infrastructure projects  in Sri Lanka</p>
-                <p>SIDATH construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years 5 construction site, have been constructed.  </p>
+                <p>SIDATH construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years many construction site, have been constructed.  </p>
             </div>
 
 
@@ -47,7 +54,7 @@
                         </div>
                         <!-- end panel-heading -->
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body"> <img src="../../public/images/image2.jpg" alt="Image" class="thumb-image"> SIDATH construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years 5 construction site, have been constructed.</div>
+                            <div class="panel-body"> <img src="../../public/images/image2.jpg" alt="Image" class="thumb-image"> SIDATH construction began construction business in 2014. The first governmental contract was the CEB Building Renovation in Samanalawewa,Srilanka in 2015. In the following two years many renovation of buildings have been succesfully completed. During this 2 years many construction site, have been constructed.</div>
                             <!-- end panel-body -->
                         </div>
                         <!-- end panel-collapse -->
@@ -109,44 +116,17 @@
             <div class="col-md-2">
                 <figure><img src="../../public/images/team-member3.jpg" alt="Image"></figure>
                 <figcaption>
-                    <h4>SENIOR ACCOUNTANT</h4>
-                    <small>(Mrs)G Dahanayake</small></figcaption>
-            </div>
-            <!-- end col-2 -->
-            <div class="col-md-2">
-                <figure><img src="../../public/images/team-member4.jpg" alt="Image"></figure>
-                <figcaption>
                     <h4>JUNIOR SUPERVISOR</h4>
                     <small>Kushil Maduranga</small></figcaption>
             </div>
             <!-- end col-2 -->
-            <div class="col-md-4">
-                <h2>AMAZING TEAM</h2>
-                <p>We have most skillful superb team.</p>
-                <img src="../../public/images/signature.jpg" alt="Image" class="signature">
-            </div>
-            <!-- end col-4 -->
+
         </div>
         <!-- end row -->
     </div>
     <!-- end container -->
 </section>
 <!-- end team-members -->
-<section class="quote background1 overlay-yellow" data-stellar-background-ratio="0.5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h5>MORE INFORMATION FILL UP TO FORM</h5>
-                <h2>LET'S GET OFFER !</h2>
-                <p>Furthermore 5 educational institutions and 18 commercial centers were built by Contractor has later become a group of companies providing services today in construction sector. </p>
-                <a href="get-quote.html">GET QUOTE <i class="ion-chevron-right"></i></a> </div>
-            <!-- end col-12 -->
-        </div>
-        <!-- end row -->
-    </div>
-    <!-- end container -->
-</section>
-<!-- end quote -->
 <section class="about-us">
     <div class="container">
         <div class="row">
@@ -159,7 +139,8 @@
             </div>
             <!-- end col-12 -->
             <div class="col-md-4 col-sm-4">
-                <div class="services-box full-width">
+                <figure><img src="../../public/images/image4.jpg" alt="Image"></figure>
+                <!--<div class="services-box full-width">
                     <figure><img src="../../public/images/image3.jpg" alt="Image"></figure>
                     <h4>ABOUT DIGGER</h4>
                     <p>When I came in he cleared the books and papers from the table, and with him I went into plans and</p>
@@ -169,27 +150,27 @@
                         <li>I can only do after it has crossed</li>
                         <li>certain threshold, quality wise</li>
                     </ul>
-                </div>
+                </div>-->
                 <!-- end services-box -->
             </div>
             <!-- end col-4 -->
             <div class="col-md-4 col-sm-4">
                 <div class="services-box full-width">
-                    <figure><img src="../../public/images/image4.jpg" alt="Image"></figure>
+
                     <h4>ABOUT WORKERS</h4>
-                    <p>When I came in he cleared the books and papers from the table, and with him I went into plans and</p>
+                    <p>We are happy to say about our work force. They are specialized for many field & we have over 50 service crowd</p>
                     <ul>
-                        <li>Feedback as to how to get this approved</li>
-                        <li>While I’d be able to provide. </li>
-                        <li>I can only do after it has crossed</li>
-                        <li>certain threshold, quality wise</li>
+                        <li>Creative Achitectures</li>
+                        <li>Constructive Designers </li>
+                        <li>Conversant Engineers</li>
+                        <li>Skilled Workers</li>
                     </ul>
                 </div>
                 <!-- end services-box -->
             </div>
             <!-- end col-4 -->
             <div class="col-md-4 col-sm-4">
-                <div class="services-box full-width">
+                <!--<div class="services-box full-width">
                     <figure><img src="../../public/images/image11.jpg" alt="Image"></figure>
                     <h4>ABOUT VEHICLES</h4>
                     <p>When I came in he cleared the books and papers from the table, and with him I went into plans and</p>
@@ -199,7 +180,7 @@
                         <li>I can only do after it has crossed</li>
                         <li>certain threshold, quality wise</li>
                     </ul>
-                </div>
+                </div>-->
                 <!-- end services-box -->
             </div>
             <!-- end col-4 -->
@@ -218,8 +199,8 @@
                     <h2>PROJECTS</h2>
                 </div>
                 <!-- end title -->
-                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a</p>
-                <a href="#" class="button">READ MORE</a> </div>
+                <p>We are Specialized for all construction services ,Road & Highways,Housing Schemes,Office Complexes,Water Supply & Drainge Systems,Sumps & Water distribution systems,Paving blocks for Garden area.</p>
+                <a href="projects.php" class="button">READ MORE</a> </div>
             <!-- end col-7 -->
             <div class="col-lg-5 col-md-6 col-sm-12 spacing">
                 <ul>
@@ -246,8 +227,8 @@
         <div class="row">
             <div class="col-md-8 col-sm-7 col-xs-12">
                 <div class="titles">
-                    <!--<h6>SIGN UP FOR OUR </h6>
-                    <h2>NEWSLETTER</h2>-->
+                    <h6> WE ARE </h6>
+                    <h2>SIDATH CONSTRUCTION</h2>
                 </div>
                 <!-- end title -->
                 <form><!--
